@@ -656,7 +656,7 @@ Ignacio Zavala Aránguiz
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Estimación.</strong> Los modelos se estiman con <strong>inferencia bayesiana</strong> mediante simulación MCMC (Stan <span class="citation" data-cites="carpenter2017">(<a href="#/referencias" role="doc-biblioref" onclick=""><strong>carpenter2017?</strong></a>)</span>, 4 cadenas, 2000 iteraciones). En vez de un único valor por parámetro, se obtienen miles de versiones plausibles de todos los parámetros a la vez, compatibles con los datos y con distribuciones previas débiles. Cada cantidad derivada (<span class="math inline">\(\omega^{prop}_k\)</span>, <span class="math inline">\(\Delta\omega^{prop}_k\)</span>, caídas porcentuales) se calcula en cada versión.</p>
+<p><strong>Estimación.</strong> Los modelos se estiman con <strong>inferencia bayesiana</strong> mediante simulación MCMC (Stan <span class="citation" data-cites="carpenter2017">(<a href="#/referencias" role="doc-biblioref" onclick="">Carpenter et al., 2017</a>)</span>, 4 cadenas, 2000 iteraciones). En vez de un único valor por parámetro, se obtienen miles de versiones plausibles de todos los parámetros a la vez, compatibles con los datos y con distribuciones previas débiles. Cada cantidad derivada (<span class="math inline">\(\omega^{prop}_k\)</span>, <span class="math inline">\(\Delta\omega^{prop}_k\)</span>, caídas porcentuales) se calcula en cada versión.</p>
 </div>
 </div>
 </div>
@@ -966,6 +966,9 @@ Bourdieu, P. (1986). The <span>Forms</span> of <span>Capital</span>. In J. G. Ri
 <div id="ref-burt2010" class="csl-entry" role="listitem">
 Burt, R. S. (Ed.). (2010). <em>Structural holes: The social structure of competition</em>. Harvard University Press.
 </div>
+<div id="ref-carpenter2017" class="csl-entry" role="listitem">
+Carpenter, B., Gelman, A., Hoffman, M. D., Lee, D., Goodrich, B., Betancourt, M., Brubaker, M., Guo, J., Li, P., &amp; Riddell, A. (2017). <span><em>Stan</em></span> : <span>A Probabilistic Programming Language</span>. <em>Journal of Statistical Software</em>, <em>76</em>(1). <a href="https://doi.org/10.18637/jss.v076.i01">https://doi.org/10.18637/jss.v076.i01</a>
+</div>
 <div id="ref-cepic2020" class="csl-entry" role="listitem">
 Cepić, D., &amp; Tonković, Ž. (2020). How social ties transcend class boundaries? <span>Network</span> variability as tool for exploring occupational homophily. <em>Social Networks</em>, <em>62</em>, 33–42. <a href="https://doi.org/10.1016/j.socnet.2020.02.003">https://doi.org/10.1016/j.socnet.2020.02.003</a>
 </div>
@@ -1095,7 +1098,7 @@ Zheng, T., Salganik, M. J., &amp; Gelman, A. (2006). How <span>Many People Do Yo
 <li><strong>Previas débilmente informativas:</strong> <span class="math inline">\(\alpha_i \sim N(\mu_\alpha, \sigma_\alpha)\)</span> con <span class="math inline">\(\mu_\alpha \sim N(0,5)\)</span> y <span class="math inline">\(\sigma_\alpha \sim N^{+}(0,2)\)</span>; <span class="math inline">\(\pi_k \sim N(0,2)\)</span>; <span class="math inline">\(\delta_{lk} \sim N(0,\tau)\)</span>; <span class="math inline">\(\beta \sim N(0,1)\)</span>; <span class="math inline">\(\omega_k - 1 \sim \text{Gamma}(2, 0.5)\)</span></li>
 <li><strong>Por qué no máxima verosimilitud:</strong> un <span class="math inline">\(\alpha_i\)</span> por ego, con ~75% de ceros, es inestable; <span class="math inline">\(\omega^{prop}\)</span> y <span class="math inline">\(\Delta\omega^{prop}\)</span> son cocientes y diferencias de parámetros, que salen directo de la posterior con su intervalo; <span class="math inline">\(\omega_k\)</span> tiene una frontera en 1</li>
 <li><strong>Intervalo de credibilidad 95%:</strong> probabilidad posterior de 95% de que el parámetro esté en ese rango</li>
-<li>Diagnósticos: Rhat, tamaño efectivo, divergencias, chequeo predictivo posterior <span class="citation" data-cites="carpenter2017">(<a href="#/referencias" role="doc-biblioref" onclick=""><strong>carpenter2017?</strong></a>)</span></li>
+<li>Diagnósticos: Rhat, tamaño efectivo, divergencias, chequeo predictivo posterior <span class="citation" data-cites="carpenter2017">(<a href="#/referencias" role="doc-biblioref" onclick="">Carpenter et al., 2017</a>)</span></li>
 </ul>
 </section>
 <section id="a3.-tamaño-poblacional-pi_k-y-el-manuscrito" class="slide level2 smaller">
