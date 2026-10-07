@@ -2,9 +2,9 @@
 
 Repositorio con las presentaciones asociadas al desarrollo de mi tesis de magíster, en el marco del curso **SOL3081**.
 
-[Presentación 1 Sesión 19/08](https://github.com/izavalaaranguiz/mgtesis_sol3081.git/presentaciones/presentacion_1/pres_c1_tesis.html)
+[Presentación 1 Sesión 19/08](https://izavalaaranguiz.github.com/mgtesis_sol3081.git/presentaciones/presentacion_1/pres_c1_tesis.html)
 
-[Presentación 2 Sesión 07/10](https://github.com/izavalaaranguiz/mgtesis_sol3081.git/presentaciones/presentacion_2/pres_c2_tesis.html)
+[Presentación 2 Sesión 07/10](https://izavalaaranguiz.github.com/mgtesis_sol3081.git/presentaciones/presentacion_2/pres_c2_tesis.html)
 
 ## Autor
 
