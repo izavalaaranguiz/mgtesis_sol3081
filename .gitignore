@@ -1,0 +1,25 @@
+# R / RStudio
+.Rhistory
+.Rproj.user/
+.Rdata
+.RData
+*.Rproj
+
+# Quarto (se versiona el render, no el cache)
+/.quarto/
+*_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Temporales de Office
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Bases de datos (pesadas y/o con restricciones de uso): NO subir
+*.dta
+*.sav
+*.rds
+*.csv.gz
