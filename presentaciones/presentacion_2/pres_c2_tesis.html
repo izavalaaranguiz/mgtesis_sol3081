@@ -55,7 +55,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="pres_c2_tesis_files/libs/revealjs/dist/theme/quarto-53c8e43ca58a4847e761aa823e854f82.css">
+  <link rel="stylesheet" href="pres_c2_tesis_files/libs/revealjs/dist/theme/quarto-e7106bec89cda85e7301e85dc22531e4.css">
   <link href="pres_c2_tesis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="pres_c2_tesis_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="pres_c2_tesis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -154,7 +154,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Fuentes intergeneracionales de la homogeneidad y la segregación ocupacional en redes de contacto</h1>
-  <p class="subtitle">Informe de avance de Tesis (SOL3080)</p>
+  <p class="subtitle">Informe de avance de Tesis (SOL3080) <br> <a href="mailto:ignacio.zavala@uc.cl">ignacio.zavala@uc.cl</a> · <a href="https://github.com/izavalaaranguiz">GitHub</a></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -167,37 +167,6 @@ Ignacio Zavala Aránguiz
     </div>
 </div>
 
-</section>
-<section class="slide level2">
-
-<!--
-CLAVES BIBLIOGRÁFICAS QUE PUEDEN FALTAR EN referencias.bib (las demás están en pres_c1 o en el manuscrito):
-  baum2025        Baum (2025), Social Networks 83, 79-91
-  mccormick2010   McCormick, Salganik y Zheng (2010)
-  gelman2021      Gelman y Margalit (2021)
-  carpenter2017   Stan (solo apéndice)
-  killworth1998a, mccormick2013, burt2010, lin1999, granovetterGettingJobStudy2010, torche2014, otero2021 (usadas en el manuscrito)
-Cifras de resultados: medias posteriores SIN intervalos de credibilidad (pendiente 0927).
-Figuras: los recuadros punteados son lugares para tus gráficos.
--->
-<style>
-.reveal .slides {
-  font-size: 0.85em;
-}
-.reveal pre {
-  font-size: 0.6em !important;
-}
-.reveal .slides section.smaller pre {
-  font-size: 0.65em !important;
-}
-.figura-pendiente {
-  border: 2px dashed #999;
-  padding: 0.6em;
-  font-size: 0.65em;
-  text-align: center;
-  color: #555;
-}
-</style>
 </section>
 <section id="punto-de-partida-lo-que-el-modelo-anterior-no-podía-responder" class="slide level2 smaller">
 <h2>Punto de partida: lo que el modelo anterior no podía responder</h2>
@@ -224,6 +193,35 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<style>
+#title-slide h1.title {
+  font-size: 1.35em;
+}
+
+#title-slide .subtitle {
+  font-size: 0.85em;
+}
+
+#title-slide .institute {
+  font-size: 0.85em;
+}
+.reveal .slides {
+  font-size: 0.85em;
+}
+.reveal pre {
+  font-size: 0.5em !important;
+}
+.reveal .slides section.smaller pre {
+  font-size: 0.65em !important;
+}
+.figura-pendiente {
+  border: 2px dashed #999;
+  padding: 0.6em;
+  font-size: 0.65em;
+  text-align: center;
+  color: #555;
+}
+</style>
 </section>
 <section id="redes-personales-acceso-a-recursos-y-reproducción-de-la-desigualdad" class="slide level2 smaller">
 <h2>Redes personales, acceso a recursos y reproducción de la desigualdad</h2>
@@ -303,10 +301,13 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 </tr>
 <tr class="even">
 <td><strong>Segregación</strong></td>
-<td>El acceso a una ocupación está concentrado en pocos egos o círculos, más allá del tamaño de la red y de la ocupación</td>
+<td>El acceso a una ocupación está concentrado en pocos egos o círculos, más allá del tamaño de la red y de la ocupación <span class="citation" data-cites="diprete2011 vantubergen2015">(<a href="#/referencias" role="doc-biblioref" onclick="">DiPrete et al., 2011</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Van Tubergen &amp; Volker, 2015</a>)</span></td>
 </tr>
 </tbody>
 </table>
+<div class="fragment">
+<p>Que una ocupación esté segregada quiere decir que sus contactos <strong>no se reparten parejo entre las personas</strong>: se concentran en algunas y otras no tienen ninguno. Si las ocupaciones son canales de información, apoyo e influencia, la segregación es una forma de <strong>desigualdad en a quién se puede llegar</strong>, más allá de qué posición se ocupa.</p>
+</div>
 <div class="fragment">
 <p><strong>Relación.</strong> La homogeneidad es un patrón de <em>a quién se conoce</em>; la segregación es el resultado agregado sobre <em>quién accede a una ocupación</em>. La homogeneidad es el mecanismo propuesto para explicar la segregación.</p>
 </div>
@@ -655,7 +656,7 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Estimación.</strong> Los modelos se estiman con <strong>inferencia bayesiana</strong> mediante simulación MCMC (Stan, 4 cadenas). En vez de un único valor por parámetro, se obtienen miles de versiones plausibles de todos los parámetros a la vez, compatibles con los datos y con distribuciones previas débiles. Cada cantidad derivada (<span class="math inline">\(\omega^{prop}_k\)</span>, <span class="math inline">\(\Delta\omega^{prop}_k\)</span>, caídas porcentuales, probabilidad de asimetría) se calcula en cada versión, y su dispersión da el intervalo de credibilidad.</p>
+<p><strong>Estimación.</strong> Los modelos se estiman con <strong>inferencia bayesiana</strong> mediante simulación MCMC (Stan <span class="citation" data-cites="carpenter2017">(<a href="#/referencias" role="doc-biblioref" onclick=""><strong>carpenter2017?</strong></a>)</span>, 4 cadenas, 2000 iteraciones). En vez de un único valor por parámetro, se obtienen miles de versiones plausibles de todos los parámetros a la vez, compatibles con los datos y con distribuciones previas débiles. Cada cantidad derivada (<span class="math inline">\(\omega^{prop}_k\)</span>, <span class="math inline">\(\Delta\omega^{prop}_k\)</span>, caídas porcentuales) se calcula en cada versión.</p>
 </div>
 </div>
 </div>
@@ -815,10 +816,7 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 <div class="fragment">
 <p>En <strong>lazos cercanos</strong>, la distancia al destino aporta más que la del origen a la segregación: <span class="math inline">\(\Delta\omega^{prop}\)</span> medio de 0,034 (destino) vs.&nbsp;0,018 (origen). En <strong>conocidos</strong>, los aportes son pequeños y ninguno domina (0,004 vs.&nbsp;0,006).</p>
 </div>
-<div class="figura-pendiente">
-<p>FIGURA 3: <span class="math inline">\(\Delta\omega^{prop}\)</span> destino (x) vs.&nbsp;origen (y) por ocupación, con diagonal; paneles cercanos y conocidos</p>
-</div>
-<div class="fragment" style="font-size: 0.8em;">
+<div class="fragment" style="font-size: 1.05em;">
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 35%">
@@ -881,15 +879,16 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 <section id="discusión-preliminar-posibles-mecanismos" class="slide level2 smaller">
 <h2>Discusión preliminar: posibles mecanismos</h2>
 <div class="fragment">
-<p><strong>Dirección de la homogeneidad.</strong> Entre conocidos, bajar en estatus casi no reduce el contacto. Una posibilidad es que muchos de esos vínculos surjan en <strong>contextos de interacción de servicio y de la vida cotidiana</strong> que organiza la posición actual <span class="citation" data-cites="feld1981">(<a href="#/referencias" role="doc-biblioref" onclick="">Feld, 1981</a>)</span>; en cambio, llegar a ocupaciones de mayor estatus exige compartir contextos que la jerarquía restringe. Entre cercanos, la <strong>selección de similares</strong> que requiere sostener un vínculo íntimo <span class="citation" data-cites="kretschmer2025 leszczensky2015 windzio2013">(<a href="#/referencias" role="doc-biblioref" onclick="">Kretschmer et al., 2025</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Leszczensky &amp; Pink, 2015</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Windzio &amp; Bicer, 2013</a>)</span> operaría en ambas direcciones.</p>
+<p>En los <strong>conocidos</strong>, el contacto cae sobre todo al subir en estatus y casi no al bajar: la frontera opera hacia arriba, justo donde un vínculo débil podría dar acceso a recursos no redundantes. En los <strong>cercanos</strong>, la distancia penaliza hacia ambos lados: la intimidad se organiza <strong>dentro de una misma franja de estatus</strong>, y el origen sigue pesando aun descontada la posición actual <span class="citation" data-cites="blau1977 newman2008">(<a href="#/referencias" role="doc-biblioref" onclick="">Blau, 1977</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Newman, 2008</a>)</span>.</p>
 </div>
 <div class="fragment">
-<p><strong>Origen y destino.</strong> El destino genera exposición continua y el origen una huella más histórica <span class="citation" data-cites="blau1977 newman2008">(<a href="#/referencias" role="doc-biblioref" onclick="">Blau, 1977</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Newman, 2008</a>)</span>. En los lazos cercanos el origen puede reflejar además <strong>parentesco</strong>: los familiares comparten por construcción la ocupación de origen del ego.</p>
+<p>Una posibilidad es que muchos de esos vínculos surjan en <strong>contextos de interacción de servicio y de la vida cotidiana</strong> que organiza la posición actual <span class="citation" data-cites="feld1981">(<a href="#/referencias" role="doc-biblioref" onclick="">Feld, 1981</a>)</span>; en cambio, llegar a ocupaciones de mayor estatus exige compartir contextos que la jerarquía restringe. Entre cercanos, la <strong>selección de similares</strong> que requiere sostener un vínculo íntimo <span class="citation" data-cites="kretschmer2025 leszczensky2015 windzio2013">(<a href="#/referencias" role="doc-biblioref" onclick="">Kretschmer et al., 2025</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Leszczensky &amp; Pink, 2015</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Windzio &amp; Bicer, 2013</a>)</span> operaría en ambas direcciones.</p>
 </div>
 <div class="fragment">
-<p><strong>Segregación en U.</strong> Los extremos aparecen más segregados que las ocupaciones intermedias, que podrían actuar como <strong>puentes relacionales</strong>. Arriba, la similitud de estatus explica una parte mayor de la segregación, consistente con procesos de <strong>cierre</strong> de las posiciones altas; abajo, la segregación responde a <strong>otros mecanismos</strong> no incluidos aún (territorio, informalidad, contextos laborales), lo que justifica ampliar las covariables.</p>
+<p>Los extremos aparecen más segregados que las ocupaciones intermedias, que podrían actuar como <strong>puentes relacionales</strong> <span class="citation" data-cites="blau2018 cepic2020 alecu2022 otero2026">(<a href="#/referencias" role="doc-biblioref" onclick="">Alecu et al., 2022</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Blau &amp; Schwartz, 2018</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Cepić &amp; Tonković, 2020</a>; <a href="#/referencias" role="doc-biblioref" onclick="">Otero et al., 2026</a>)</span>. Arriba, la similitud de estatus (+ variables sociodemográficas) explica una parte mayor de la segregación, consistente con procesos de <strong>cierre</strong> de las posiciones altas; abajo, la segregación estaría respondiendo a <strong>otros mecanismos</strong> no incluidos aún (geografía, contextos laborales,), lo que justifica ampliar las covariables.</p>
 </div>
 <aside class="notes">
+<p><strong>Por qué importa para la reproducción de la desigualdad.</strong> Que el origen siga moldeando los lazos cercanos es consistente con que las redes <strong>transmitan posición entre generaciones</strong>. En esa lectura, la desigualdad no está solo en las posiciones que se alcanzan, sino en las posiciones a las que las redes permiten llegar.</p>
 <p>~1 min. Son interpretaciones por contrastar, no resultados. Controles pendientes: zona geográfica, pareja e hijos; modelos sin distancias y sin sociodemográficas.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -905,7 +904,7 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 </section>
 <section id="alcance-y-próximos-pasos" class="slide level2 smaller">
 <h2>Alcance y próximos pasos</h2>
-<div class="fragment" style="font-size: 0.9em;">
+<div class="fragment" style="font-size: 1.25em;">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -915,18 +914,16 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 <p><strong>Warning</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Alcance.</strong> Diseño transversal: las asociaciones son consistentes con que la posición estructure la red y con que la red contribuya al logro. La distancia es unidimensional (ISEI) y el origen se mide con un solo sostenedor, retrospectivamente. Todas las cifras son medias posteriores sin intervalos.</p>
+<p><strong>Alcance.</strong> Diseño transversal: las asociaciones son consistentes con que la posición estructure la red y con que la red contribuya al logro.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="fragment">
 <ul>
-<li>Intervalos de credibilidad para <span class="math inline">\(\beta\)</span>, <span class="math inline">\(\omega^{prop}_k\)</span> y <span class="math inline">\(\Delta\omega^{prop}_k\)</span></li>
-<li>Modelos <strong>sin distancias</strong> y <strong>sin sociodemográficas</strong>; ampliar controles (zona geográfica, pareja, hijos)</li>
-<li>Contactos esperados por perfil de origen y destino y por tercio de estatus</li>
-<li>Robustez: LOO-CV, tres grupos de estatus, otras métricas de distancia (EGP, Oesch), restringir la muestra sin imputación de clase del sostenedor</li>
-<li>Diagnósticos de convergencia (Stan)</li>
+<li>Modelos <strong>sin distancias</strong> y <strong>sin sociodemográficas</strong>; ampliar controles que han sido desarrollados en literatura de capital social y desigualdad de clase en redes, que podrían contribuir a explicar la segregación ocupacional en grupos bajos (zona geográfica, pareja, hijos, ingresos, etc… [<span class="citation" data-cites="lin2001">Lin (<a href="#/referencias" role="doc-biblioref" onclick="">2001</a>)</span>; @])</li>
+<li>Contactos esperados por perfiles de origen y destino y por tercio de estatus</li>
+<li>Robustez: LOO-CV para comparar ajustes <span class="citation" data-cites="baum2025">(<a href="#/referencias" role="doc-biblioref" onclick="">Baum, 2025</a>)</span>, tres grupos de estatus, y revisar diagnósticos de convergencia (Stan)</li>
 </ul>
 </div>
 <aside class="notes">
@@ -951,6 +948,9 @@ Figuras: los recuadros punteados son lugares para tus gráficos.
 <section id="referencias" class="slide level2 smaller scrollable">
 <h2>Referencias</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-alecu2022" class="csl-entry" role="listitem">
+Alecu, A., Helland, H., Hjellbrekke, Johs., &amp; Jarness, V. (2022). Who you know: <span>The</span> classed structure of social capital. <em>The British Journal of Sociology</em>, <em>73</em>(3), 505–535. <a href="https://doi.org/10.1111/1468-4446.12945">https://doi.org/10.1111/1468-4446.12945</a>
+</div>
 <div id="ref-baum2025" class="csl-entry" role="listitem">
 Baum, D. S. (2025). Explaining contact patterns in acquaintanceship networks: <span>A</span> new covariate-based model. <em>Social Networks</em>, <em>83</em>, 79–91. <a href="https://doi.org/10.1016/j.socnet.2025.05.005">https://doi.org/10.1016/j.socnet.2025.05.005</a>
 </div>
@@ -965,6 +965,9 @@ Bourdieu, P. (1986). The <span>Forms</span> of <span>Capital</span>. In J. G. Ri
 </div>
 <div id="ref-burt2010" class="csl-entry" role="listitem">
 Burt, R. S. (Ed.). (2010). <em>Structural holes: The social structure of competition</em>. Harvard University Press.
+</div>
+<div id="ref-cepic2020" class="csl-entry" role="listitem">
+Cepić, D., &amp; Tonković, Ž. (2020). How social ties transcend class boundaries? <span>Network</span> variability as tool for exploring occupational homophily. <em>Social Networks</em>, <em>62</em>, 33–42. <a href="https://doi.org/10.1016/j.socnet.2020.02.003">https://doi.org/10.1016/j.socnet.2020.02.003</a>
 </div>
 <div id="ref-dimaggio2012" class="csl-entry" role="listitem">
 DiMaggio, P., &amp; Garip, F. (2012). Network <span>Effects</span> and <span>Social Inequality</span>. <em>Annual Review of Sociology</em>, <em>38</em>(1), 93–118. <a href="https://doi.org/10.1146/annurev.soc.012809.102545">https://doi.org/10.1146/annurev.soc.012809.102545</a>
@@ -1014,6 +1017,9 @@ McPherson, M., Smith-Lovin, L., &amp; Cook, J. M. (2001). Birds of a <span>Feath
 <div id="ref-newman2008" class="csl-entry" role="listitem">
 Newman, K. S. (2008). <em>Falling from grace: Downward mobility in the age of affluence</em> (Nachdr.). Univ. of California Press.
 </div>
+<div id="ref-otero2026" class="csl-entry" role="listitem">
+Otero, G., Plaza, A., &amp; Zavala-Aránguiz, I. (2026). Social mobility and class segregation in personal networks over time: <span>Evidence</span> from longitudinal data. <em>Frontiers in Sociology</em>, <em>11</em>(1782127), 1782127. <a href="https://doi.org/10.3389/fsoc.2026.1782127">https://doi.org/10.3389/fsoc.2026.1782127</a>
+</div>
 <div id="ref-otero2021" class="csl-entry" role="listitem">
 Otero, G., Volker, B., &amp; Rozer, J. (2021). Open <span>But Segregated</span>? <span>Class Divisions And</span> the <span>Network Structure</span> of <span>Social Capital</span> in <span>Chile</span>. <em>Social Forces</em>, <em>100</em>(2), 649–679. <a href="https://doi.org/10.1093/sf/soab005">https://doi.org/10.1093/sf/soab005</a>
 </div>
@@ -1022,6 +1028,9 @@ Otero, G., Volker, B., &amp; Rozer, J. (2022). Space and social capital: Social 
 </div>
 <div id="ref-torche2014" class="csl-entry" role="listitem">
 Torche, F. (2014). Movilidad <span>Intergeneracional</span> y <span>Desigualdad</span>: <span>El Caso Latinoamericano</span>. <em>Annual Review of Sociology</em>, <em>40</em>(1), S2-1-S2-25. <a href="https://doi.org/10.1146/annurev-soc-062215-092006">https://doi.org/10.1146/annurev-soc-062215-092006</a>
+</div>
+<div id="ref-vantubergen2015" class="csl-entry" role="listitem">
+Van Tubergen, F., &amp; Volker, B. (2015). Inequality in <span>Access</span> to <span>Social Capital</span> in the <span>Netherlands</span>. <em>Sociology</em>, <em>49</em>(3), 521–538. <a href="https://doi.org/10.1177/0038038514543294">https://doi.org/10.1177/0038038514543294</a>
 </div>
 <div id="ref-windzio2013" class="csl-entry" role="listitem">
 Windzio, M., &amp; Bicer, E. (2013). Are we just friends? <span>Immigrant</span> integration into high- and low-cost social networks. <em>Rationality and Society</em>, <em>25</em>(2), 123–145. <a href="https://doi.org/10.1177/1043463113481219">https://doi.org/10.1177/1043463113481219</a>
