@@ -3,7 +3,7 @@ title: "Intergenerational sources of homogeneity and occupational segregation in
 subtitle: |
   **Origin, destination and tie closeness in Santiago, Chile** <br>
   <br>
-   Second Conference ECINEQ–LAC Meeting 28-29 October 2026, Montevideo. <br>
+   *Second Conference ECINEQ–LAC Meeting 28-29 October 2026, Montevideo*. <br>
   <a href="mailto:ignacio.zavala@uc.cl">ignacio.zavala@uc.cl </a>
 author: "Ignacio Zavala Aránguiz & Gabriel Otero"
 institute: |
