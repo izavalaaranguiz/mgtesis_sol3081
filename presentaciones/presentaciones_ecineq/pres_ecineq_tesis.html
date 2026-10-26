@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="pres_ecineq_tesis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="pres_ecineq_tesis_files/libs/quarto-html/tabby.min.js"></script>
+<script src="pres_ecineq_tesis_files/libs/quarto-html/popper.min.js"></script>
+<script src="pres_ecineq_tesis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="pres_ecineq_tesis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="pres_ecineq_tesis_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="pres_ecineq_tesis_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Ignacio Zavala Aránguiz &amp; Gabriel Otero">
+  <title>Intergenerational sources of homogeneity and occupational segregation in contact networks</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="pres_ecineq_tesis_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="pres_ecineq_tesis_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="pres_ecineq_tesis_files/libs/revealjs/dist/theme/quarto-04a8f54b414fa60685a42b9dff531af9.css">
+  <link href="pres_ecineq_tesis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="pres_ecineq_tesis_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="pres_ecineq_tesis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="pres_ecineq_tesis_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Intergenerational sources of homogeneity and occupational segregation in contact networks</h1>
+  <p class="subtitle"><strong>Origin, destination and tie closeness in Santiago, Chile</strong> <br> <br> Second Conference ECINEQ–LAC Meeting 28-29 October 2026, Montevideo. <br> <a href="mailto:ignacio.zavala@uc.cl">ignacio.zavala@uc.cl </a></p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Ignacio Zavala Aránguiz &amp; Gabriel Otero
+</div>
+        <p class="quarto-title-affiliation">
+            Pontificia Universidad Católica de Chile, Universidad Diego Portales
+            </p><div class="logos-row">
+            <p><img src="logos/uc-chile.png" alt="Pontificia Universidad Católica de Chile"> <img src="logos/udp.jpg" alt="Universidad Diego Portales"> <img src="logos/anid_chile.png" alt="ANID"></p>
+            </div>
+          <p></p>
+    </div>
+</div>
+
+</section>
+<section id="personal-networks-do-not-just-reflect-inequality-they-help-reproduce-it" class="slide level2 smaller">
+<h2>Personal networks do not just reflect inequality: they help reproduce it</h2>
+<style>
+#title-slide h1.title {
+  font-size: 1.35em;
+}
+
+#title-slide .subtitle {
+  font-size: 0.85em;
+}
+
+#title-slide .institute {
+  font-size: 0.85em;
+}
+.reveal .slides {
+  font-size: 0.85em;
+}
+.reveal pre {
+  font-size: 0.5em !important;
+}
+.reveal .slides section.smaller pre {
+  font-size: 0.65em !important;
+}
+.figura-pendiente {
+  border: 2px dashed #999;
+  padding: 0.6em;
+  font-size: 0.65em;
+  text-align: center;
+  color: #555;
+}
+</style>
+<div class="fragment">
+<ul>
+<li>Information, job opportunities and support circulate through personal networks <span class="citation" data-cites="burt2010 granovetterGettingJobStudy2010 vantubergen2015">(<a href="#/references" role="doc-biblioref" onclick="">Burt, 2010</a>; <a href="#/references" role="doc-biblioref" onclick="">Granovetter, 2010</a>; <a href="#/references" role="doc-biblioref" onclick="">Van Tubergen &amp; Volker, 2015</a>)</span>, so their <strong>socioeconomic composition</strong> shapes which advantages accumulate and which do not <span class="citation" data-cites="lin2001 dimaggio2012 Bourdieu1986">(<a href="#/references" role="doc-biblioref" onclick="">Bourdieu, 1986</a>; <a href="#/references" role="doc-biblioref" onclick="">DiMaggio &amp; Garip, 2012</a>; <a href="#/references" role="doc-biblioref" onclick="">Lin, 2001</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>People tend to associate with those who resemble them in <strong>occupation</strong> and sociodemographic traits, especially in unequal and segregated contexts <span class="citation" data-cites="mcpherson2001 otero2021">(<a href="#/references" role="doc-biblioref" onclick="">McPherson et al., 2001</a>; <a href="#/references" role="doc-biblioref" onclick="">Otero et al., 2021</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>This links to a central question in stratification: how much of the position people attain, and of the resources attached to it, traces back to <strong>social origin</strong>. Access to social capital depends on initial positions, that is, on parental resources, and not only on current position <span class="citation" data-cites="lin1999">Goldman (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Why Chile?</strong> High inequality, low intergenerational mobility, and marked residential and educational segregation <span class="citation" data-cites="torche2005 torche2014 mendez2019">(<a href="#/references" role="doc-biblioref" onclick="">Méndez &amp; Gayo, 2019</a>; <a href="#/references" role="doc-biblioref" onclick="">Torche, 2005</a>, <a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span>: a setting where contact between classes is structurally restricted.</p>
+</div>
+<div class="highlight-box fragment" style="font-size: 1.1em;">
+<p><strong>Research question.</strong> How are <strong>origin</strong> and <strong>destination</strong> positions associated with the <strong>homogeneity</strong> and <strong>occupational segregation</strong> of contact networks in Santiago, and how does this relationship differ between <strong>close ties</strong> and <strong>acquaintances</strong>?</p>
+</div>
+<aside class="notes">
+<p>Gabriel · ~1.5 min. Key idea (first paragraph of the report): networks are not only a mirror of inequality, they are one of the mechanisms through which it is reproduced. Close with the Chilean setting and state the research question explicitly: it is the hook for the whole talk, and every later slide answers one piece of it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-literature-anchors-similarity-in-current-position-social-origin-remains-unexamined" class="slide level2 smaller">
+<h2>The literature anchors similarity in current position; social origin remains unexamined</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Studies of network composition model similarity from a single reference: ego’s <strong>current occupation</strong>, or <em>destination</em> <span class="citation" data-cites="otero2021 espinosa-rada2026">(<a href="#/references" role="doc-biblioref" onclick="">Espinosa-Rada et al., 2026</a>; <a href="#/references" role="doc-biblioref" onclick="">Otero et al., 2021</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Social origin</strong> organizes the earliest and most durable ties (extended family, childhood neighborhood, school), stratified by the occupation of the household of upbringing <span class="citation" data-cites="feld1981 lareau2011 blau1977">(<a href="#/references" role="doc-biblioref" onclick="">Blau, 1977</a>; <a href="#/references" role="doc-biblioref" onclick="">Feld, 1981</a>; <a href="#/references" role="doc-biblioref" onclick="">Lareau, 2011</a>)</span>. Those contacts are not necessarily erased by later changes in position <span class="citation" data-cites="newman2008 wellman2018">(<a href="#/references" role="doc-biblioref" onclick="">Newman, 2008</a>; <a href="#/references" role="doc-biblioref" onclick="">Wellman, 2018</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Do people know more people close to their <strong>social origin</strong> or to their <strong>current position</strong>, and what does each case reveal about how stratification operates in networks?</li>
+</ul>
+</div>
+</div><div class="column" style="width:52%;">
+<div class="fragment" data-fragment-index="1">
+<figure class="quarto-figure quarto-figure-center">
+<svg class="diagram-origin-destino" viewbox="0 0 560 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Social origin and destination as two anchors of the contacts' occupations">
+  <defs>
+    <marker id="arrNavy" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1A3A5C"></path>
+    </marker>
+    <marker id="arrGrey" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#777"></path>
+    </marker>
+    <marker id="arrRed" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B3141A"></path>
+    </marker>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="125" rx="10" fill="#E8EEF5" stroke="#1A3A5C" stroke-width="2"></rect>
+  <text x="26" y="40" font-size="21" font-weight="bold" fill="#1A3A5C">SOCIAL ORIGIN</text>
+  <text x="26" y="68" font-size="18" fill="#222">Household of upbringing</text>
+  <text x="26" y="92" font-size="16" fill="#555">(occupation of the head at age 15)</text>
+  <text x="26" y="118" font-size="16" fill="#555" font-style="italic">family · neighborhood · school</text>
+
+  <rect x="10" y="175" width="380" height="125" rx="10" fill="#E8EEF5" stroke="#1A3A5C" stroke-width="2"></rect>
+  <text x="26" y="205" font-size="21" font-weight="bold" fill="#1A3A5C">DESTINATION</text>
+  <text x="26" y="233" font-size="18" fill="#222">Ego's current occupation</text>
+  <text x="26" y="257" font-size="16" fill="#555">(ISEI of own occupation)</text>
+  <text x="26" y="283" font-size="16" fill="#555" font-style="italic">colleagues · professional settings · services</text>
+
+  <rect x="10" y="345" width="380" height="110" rx="10" fill="#1A3A5C"></rect>
+  <text x="26" y="378" font-size="21" font-weight="bold" fill="#FFFFFF">CONTACTS</text>
+  <text x="26" y="408" font-size="18" fill="#FFFFFF">Occupations of the people</text>
+  <text x="26" y="432" font-size="18" fill="#FFFFFF">ego knows</text>
+
+  <line x1="200" y1="137" x2="200" y2="172" stroke="#777" stroke-width="2.5" marker-end="url(#arrGrey)"></line>
+  <text x="212" y="161" font-size="15" fill="#777">trajectory</text>
+
+  <line x1="200" y1="302" x2="200" y2="342" stroke="#1A3A5C" stroke-width="3.5" marker-end="url(#arrNavy)"></line>
+  <text x="226" y="326" font-size="15" fill="#1A3A5C">what we usually model</text>
+
+  <path d="M392 72 H465 V400 H394" fill="none" stroke="#B3141A" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arrRed)"></path>
+  <text transform="translate(500 236) rotate(-90)" text-anchor="middle" font-size="17" font-weight="bold" fill="#B3141A">largely unexamined</text>
+</svg>
+<figcaption>Social origin and destination as two positional anchors of the occupations of ego's contacts. Source: authors' elaboration.</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>Gabriel · ~1.5 min. Gap 1: the destination anchor captures contemporary contexts; social origin organizes the earliest and most durable ties. If origin matters, segregation reproduces inherited disadvantage; if destination matters, it reflects present stratification. Point at the dashed arrow: this is what the paper adds.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="homogeneity-and-segregation-are-not-the-same" class="slide level2 smaller">
+<h2>Homogeneity and segregation are not the same</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Homogeneity</strong> describes <em>how similar two people are</em>, relative to contact opportunities: it is a property of the <strong>ego</strong>, once the size of groups and each person’s sociability are accounted for.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Segregation</strong> describes <em>how concentrated access to an occupation is</em>: its members are known by many people, or only by a few circles <span class="citation" data-cites="zheng2006 diprete2011">(<a href="#/references" role="doc-biblioref" onclick="">DiPrete et al., 2011</a>; <a href="#/references" role="doc-biblioref" onclick="">Zheng et al., 2006</a>)</span>. It is a property of <strong>access to the group</strong>, not of an individual’s network.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>The link is propensity.</strong> If the chance of knowing someone in occupation <em>k</em> depends on how close ego is to <em>k</em>, contacts pile up among nearby egos and counts become <strong>overdispersed</strong> (<span class="math inline">\(\omega &gt; 1\)</span>): the part of that overdispersion absorbed by distance tells us how much segregation is organized around a reference <span class="citation" data-cites="baum2025">(<a href="#/references" role="doc-biblioref" onclick="">Baum, 2025</a>)</span>.</li>
+</ul>
+</div>
+</div><div class="column" style="width:48%;">
+<div class="fragment" data-fragment-index="3">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-concepto-segregacion-1.png" style="width:100.0%"></p>
+<figcaption>Illustrative (simulated) distributions of the number of contacts in an occupation <em>k</em>, with the same mean in both panels; the second panel uses ω = 3. Source: authors’ elaboration.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>Gabriel · ~2 min. The most important conceptual slide: everything that follows is the link between the two levels. SAY (do not put on the slide): the two notions are often treated as interchangeable, so that similarity of contacts is read directly as isolation between classes <span class="citation" data-cites="otero2021 vantubergen2015">(<a href="#/references" role="doc-biblioref" onclick="">Otero et al., 2021</a>; <a href="#/references" role="doc-biblioref" onclick="">Van Tubergen &amp; Volker, 2015</a>)</span>; but the same homophily gradient can imply very different levels of segregation depending on how positions are distributed <span class="citation" data-cites="blau1977">(<a href="#/references" role="doc-biblioref" onclick="">Blau, 1977</a>)</span>, and an occupation can be segregated for reasons unrelated to status similarity. The figure is illustrative (simulated, not data): both panels have the same average number of contacts in occupation k, but in the second one they are concentrated in few egos. Overdispersion ω above 1 is how we measure segregation; we come back to it when we introduce the model. If asked: if segregation is ordered by destination, barriers depend on the position attained; if by origin, they persist beyond changes in position.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-questions-for-santiago" class="slide level2 smaller">
+<h2>Three questions for Santiago</h2>
+<div class="fragment">
+<p><strong>Why Chile is informative:</strong> if similarity to origin and to destination is identifiable where barriers between classes are already pronounced, it is likely a general feature of stratified societies <span class="citation" data-cites="torche2014 mendez2019 contreras2019">(<a href="#/references" role="doc-biblioref" onclick="">Contreras et al., 2019</a>; <a href="#/references" role="doc-biblioref" onclick="">Méndez &amp; Gayo, 2019</a>; <a href="#/references" role="doc-biblioref" onclick="">Torche, 2014</a>)</span>.</p>
+</div>
+<div class="highlight-box fragment">
+<p><strong>1. Homogeneity.</strong> Do contacts resemble ego’s <strong>destination</strong> more than ego’s <strong>origin</strong>? And does status distance penalize contact with <strong>higher-status</strong> occupations more than with lower-status ones?</p>
+</div>
+<div class="highlight-box fragment">
+<p><strong>2. Segregation.</strong> Are <strong>high- and low-status</strong> occupations more segregated in their access than middle-status ones? How much of that segregation does status similarity explain, and is it similarity to <strong>origin</strong> or to <strong>destination</strong>?</p>
+</div>
+<div class="highlight-box fragment">
+<p><strong>3. Tie closeness.</strong> Do both patterns get stronger among <strong>close ties</strong> (close friends and family) than among <strong>acquaintances</strong>?</p>
+</div>
+<aside class="notes">
+<p>Gabriel · ~1 min, then hand over to Ignacio (“Ignacio will show how we measure it and what we find”). Mapping to the report’s hypotheses, for reference only (do not show): question 1 = H1 and H3a; question 2 = H2 and H3b; question 3 = H4a and H4b. All are exploratory.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="original-data-1124-people-report-whom-they-know-in-27-occupations" class="slide level2 smaller">
+<h2>Original data: 1,124 people report whom they know in 27 occupations</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Social Survey of Class, Networks and Political Attitudes (2025)</strong>: Metropolitan Region of Santiago, 41 communes; probabilistic, multistage, stratified sample; face-to-face; <strong>N = 1,124</strong>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Position Generator</strong> <span class="citation" data-cites="lin1986">(<a href="#/references" role="doc-biblioref" onclick="">Lin &amp; Dumin, 1986</a>)</span> with <strong>27 occupations</strong>: <em>“How many people do you know who work as…?”</em> and, of them, <em>“how many are close friends or family?”</em> Result: 30,348 ego–occupation dyads, i.e.&nbsp;aggregated relational data <span class="citation" data-cites="zheng2006">(<a href="#/references" role="doc-biblioref" onclick="">Zheng et al., 2006</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>Counts:</strong> <span class="math inline">\(c_{ik}\)</span> = all contacts of ego <span class="math inline">\(i\)</span> in occupation <span class="math inline">\(k\)</span>;</li>
+<li><span class="math inline">\(f_{ik}\)</span> = <strong>close ties</strong> (close friends or family);</li>
+<li><span class="math inline">\(w_{ik} = c_{ik} - f_{ik}\)</span> = <strong>acquaintances</strong>.</li>
+<li>About 75% of the counts are zeros.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><strong>Status:</strong> ISEI-08 <span class="citation" data-cites="ganzeboom1992">(<a href="#/references" role="doc-biblioref" onclick="">Ganzeboom et al., 1992</a>)</span> of each occupation, in three levels: <strong>high</strong> (≥ 66), <strong>middle</strong> (41–65) and <strong>low</strong> (≤ 40).</li>
+</ul>
+</div>
+</div><div class="column" style="width:54%;">
+<div class="fragment" data-fragment-index="2">
+<figure class="quarto-figure quarto-figure-center">
+
+<table class="occ-table caption-top">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">High (ISEI ≥ 66)</th>
+<th data-quarto-table-cell-role="th">Middle (41–65)</th>
+<th data-quarto-table-cell-role="th">Low (≤ 40)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Doctors (89)</td>
+<td>Secondary/primary teachers (63)</td>
+<td>Car mechanics (39)</td>
+</tr>
+<tr class="even">
+<td>Lawyers (85)</td>
+<td>Social workers (59)</td>
+<td>Truck drivers (36)</td>
+</tr>
+<tr class="odd">
+<td>Professors (76)</td>
+<td>Police officers (53)</td>
+<td>Store salespersons (31)</td>
+</tr>
+<tr class="even">
+<td>Civil/industrial engineers (72)</td>
+<td>Nurses and LVN (48)</td>
+<td>Supermarket cashiers (31)</td>
+</tr>
+<tr class="odd">
+<td>Architects (71)</td>
+<td>Kindergarden teachers (47)</td>
+<td>Delivery workers (30)</td>
+</tr>
+<tr class="even">
+<td>CEOs (70)</td>
+<td>Accountants (47)</td>
+<td>Security guards (27)</td>
+</tr>
+<tr class="odd">
+<td>Senior government officials (70)</td>
+<td>Shopkeepers/store owners (45)</td>
+<td>Cooks (27)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Electricians (43)</td>
+<td>Street vendors (26)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Secretaries (42)</td>
+<td>Construction/factory workers (24)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Farmers (16)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Office cleaners (16)</td>
+</tr>
+</tbody>
+</table>
+
+<figcaption>The 27 occupations of the position generator, by ISEI-08 level (ISEI score in parentheses). Source: SSCNPA (2025).</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~1.5 min. Sampling: 10 territorial strata, then census zones, dwellings, and the adult with the most recent birthday in each household. The instrument does not enumerate ties one by one: it asks how many people ego knows in each occupation (aggregated relational data) and, of those, how many are close friends or family. We model close ties and acquaintances separately; both are counts with a high share of zeros (75.9% and 74.9%), because people often know nobody in occupations far from their own. The three ISEI levels are used later to read the results by status.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="distance-between-ego-and-each-occupation-in-isei-points" class="slide level2 smaller">
+<h2>Distance between ego and each occupation, in ISEI points</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Two reference positions for each ego <span class="math inline">\(i\)</span>: <strong>destination</strong> (ISEI of own occupation) and <strong>social origin</strong> (ISEI of the household head when ego was 15).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Distance to occupation <span class="math inline">\(k\)</span>, split into an upward and a downward leg:</li>
+</ul>
+<p><span class="math display">\[\begin{aligned}D^{+}_{ik}&amp;=\max(0,\ \mathrm{ISEI}_k-\mathrm{ISEI}_i)\\ D^{-}_{ik}&amp;=\max(0,\ \mathrm{ISEI}_i-\mathrm{ISEI}_k)\end{aligned}\]</span></p>
+</div>
+<div class="highlight-box fragment" data-fragment-index="4">
+<p><strong>How to read a coefficient <span class="math inline">\(\beta\)</span></strong> (per 10 ISEI points)</p>
+<p><span class="math display">\[\%\,\text{change in expected contacts}=100\,(e^{\beta}-1)\]</span></p>
+<ul>
+<li><span class="math inline">\(\beta=-0.213\)</span>: <strong>19.2% fewer</strong> contacts</li>
+<li>At 30 points: <strong>47.2% fewer</strong> (effects compound)</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="2">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-metrica-distancia-1.png" style="width:100.0%"></p>
+<figcaption>Distance from an illustrative ego to two occupations, measured from destination and from social origin. Source: authors’ elaboration based on ISEI-08 scores of the position generator.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~2 min. Read the figure bottom-up: the same occupation is at a different distance from each reference. For this illustrative ego (an accountant whose household head was a store salesperson), lawyers are 38 points above the destination but 54 above the social origin; security guards are 20 points below the destination and only 4 below the origin. Because the model includes both sets of distances at once, each one is estimated net of the other; “up” and “down” are relative to each ego, not a property of the occupation. SAY the reading rule slowly, it is the key to the results: the coefficient is multiplicative. β = −0.213 means 100(e^−0.213 − 1) = −19.2% contacts per 10 points, and e^(3 × −0.213) = 0.528, i.e.&nbsp;47.2% fewer at 30 points, not three times 19.2. Next: the model that uses these distances.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-baseline-segregation-to-the-covariate-model" class="slide level2 smaller">
+<h2>From baseline segregation to the covariate model</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Baseline.</strong> If the propensity to know occupation <span class="math inline">\(k\)</span> varies across egos, counts are overdispersed by a factor <span class="math inline">\(\omega_k\)</span>: <span class="math inline">\(\omega_k=1\)</span> is random mixing, <span class="math inline">\(\omega_k&gt;1\)</span> is <strong>segregation</strong> <span class="citation" data-cites="zheng2006 diprete2011">(<a href="#/references" role="doc-biblioref" onclick="">DiPrete et al., 2011</a>; <a href="#/references" role="doc-biblioref" onclick="">Zheng et al., 2006</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Covariate model</strong> <span class="citation" data-cites="baum2025">(<a href="#/references" role="doc-biblioref" onclick="">Baum, 2025</a>)</span>: the propensity gets an explained part <span class="math inline">\(\lambda_{ik}\)</span>; the overdispersion left is <span class="math inline">\(\omega'_k\)</span>:</li>
+</ul>
+<p><span class="math display">\[\log\mu_{ik}=\alpha_i+\log m_k+\pi_k+\lambda_{ik}\]</span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="math inline">\(\lambda_{ik}\)</span> has two parts:</li>
+</ul>
+<p><span class="math display">\[\lambda_{ik}=\underbrace{\textstyle\sum_{l}\delta_{lk}X_{li}}_{\text{ego traits}}+\underbrace{\theta_{ik}}_{\text{four distances}}\]</span></p>
+<ul>
+<li><strong>Ego traits:</strong> sex, education and age.</li>
+<li><strong>Distances:</strong> up and down, from destination and from origin, one <span class="math inline">\(\beta\)</span> each, common to all occupations.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Bayesian estimation in Stan <span class="citation" data-cites="carpenter2017">(<a href="#/references" role="doc-biblioref" onclick="">Carpenter et al., 2017</a>)</span>, separately for close ties and acquaintances.</li>
+</ul>
+</div>
+</div><div class="column" style="width:44%;">
+<div class="fragment" data-fragment-index="2">
+<figure class="quarto-figure quarto-figure-center">
+
+<table class="occ-table model-table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Barrier effects</th>
+<th data-quarto-table-cell-role="th">Covariate model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Controls for</strong></td>
+<td>sociability, occupation size</td>
+<td>+ sex, education, age<br>
++ four distances</td>
+</tr>
+<tr class="even">
+<td><strong>Overdispersion</strong></td>
+<td><em>ω</em><sub>k</sub></td>
+<td><em>ω′</em><sub>k</sub></td>
+</tr>
+<tr class="odd">
+<td><strong>Reads as</strong></td>
+<td>total segregation</td>
+<td>segregation left unexplained</td>
+</tr>
+</tbody>
+</table>
+
+<figcaption>The two models whose overdispersions are compared. Source: authors' elaboration.</figcaption>
+</figure>
+</div>
+<div class="highlight-box fragment" data-fragment-index="3">
+<p>Since occupation size and sociability are already accounted for, each <span class="math inline">\(\beta\)</span> is <strong>homogeneity relative to contact opportunity</strong>.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~2.5 min. First the baseline, in one breath (this is the idea Gabriel showed with the simulated histograms): if everybody had the same chance of knowing anyone, counts would be Poisson; when the chance varies across people, the variance exceeds the mean by a factor ω, and the excess over 1 is segregation. Then the covariate model splits the propensity into a part explained by observed characteristics and a residual. Two kinds of explanatory terms: individual traits of ego (sex, education, age; their effects can differ by occupation) and the four distances (their betas are common to all occupations). Because both are in the model, comparing ω with ω′ tells us how much segregation is associated with them. Estimation is Bayesian (Stan, four chains of 2,000 iterations, no divergences, R-hat ≤ 1.01); we report posterior means and 95% credible intervals. If asked about priors: weakly informative, in the appendix of the report.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-quantities-summarize-how-much-the-covariates-explain" class="slide level2 smaller">
+<h2>Two quantities summarize how much the covariates explain</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Explained proportion</strong> <span class="citation" data-cites="mccormick2010 baum2025">(<a href="#/references" role="doc-biblioref" onclick="">Baum, 2025</a>; <a href="#/references" role="doc-biblioref" onclick="">McCormick et al., 2010</a>)</span>:</li>
+</ul>
+<p><span class="math display">\[\omega^{\text{prop}}_k=\frac{\omega_k-\omega'_k}{\omega_k-1}\]</span></p>
+<p>From 0 (nothing explained) to 1 (everything). It is not how segregated <span class="math inline">\(k\)</span> is, but how much of its segregation the covariates account for.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Unique contribution of a block</strong> <span class="math inline">\(X_b\)</span> (e.g.&nbsp;distance to destination, both legs):</li>
+</ul>
+<p><span class="math display">\[\Delta\omega^{\text{prop}}_k(X_b)=\omega^{\text{prop}}_{k,\text{full}}-\omega^{\text{prop}}_{k,\text{without }X_b}\]</span></p>
+<p>Destination against origin: which anchor adds more?</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="math inline">\(\omega\)</span> scales with the average number of contacts, so levels are <strong>not comparable between close ties and acquaintances</strong>; we compare through these two quantities.</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="fragment" data-fragment-index="1">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-descomposicion-1.png" style="width:100.0%"></p>
+<figcaption>Illustrative decomposition of the excess overdispersion of one occupation (ω = 3, ω′ = 2.2). Source: authors’ elaboration.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~1 min. The excess overdispersion ω − 1 is split into a part the covariates explain (ω − ω′) and a residual (ω′ − 1). ω_prop is the explained share. The Δ version drops one block (distance to destination, or to origin) and asks how much the explained share falls: that is the unique contribution of each anchor, and it is how we answer “origin or destination?” for segregation. Warning to say aloud: ω is not comparable in level across close ties and acquaintances, which is why we use these ratios.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="contacts-decline-with-distance-from-both-anchors-more-steeply-from-destination" class="slide level2 smaller">
+<h2>Contacts decline with distance from both anchors, more steeply from destination</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<div class="fragment" data-fragment-index="1">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-coefplot-1.png" style="width:100.0%"></p>
+<figcaption>Distance coefficients from the covariate model, per ten ISEI points, by anchor, direction and tie type. Points are posterior means, bars 95% credible intervals, labels the implied % change in contacts; grey: interval includes zero. N = 1,124 egos; 30,348 ego-occupation dyads. Source: SSCNPA (2025).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:38%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>How to read it.</strong> Each dot is a <span class="math inline">\(\beta\)</span> per 10 ISEI points: left of the dashed line, fewer contacts.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Both anchors matter:</strong> seven of eight intervals exclude zero.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>Destination weighs more than origin</strong> among close ties, upward: 19.2% against 13.2% fewer contacts (probability 0.98).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><strong>Tie type:</strong> acquaintances reach lower-status occupations almost as often as equal-status ones (3.2% fewer, not distinguishable from zero); close ties decline in both directions.</li>
+</ul>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~2.5 min. POINTER ORDER (the figure appears together with the first bullet, then one bullet per click). 1. Dashed line first: zero = no change; everything to the left means fewer contacts. Red = close ties, blue = acquaintances, grey = interval includes zero. The labels are the implied % change per 10 points. 2. LEFT panel (destination), top row (“Upward”), RED dot: β = −0.213, 19.2% fewer close-tie contacts for every 10 points above ego’s own status. Then the BLUE dot just below it: β = −0.172, 15.7% fewer acquaintances. Message: both tie types fall as occupations get higher than ego. 3. LEFT panel, bottom row (“Downward”): RED dot β = −0.167 (15.3% fewer) versus the GREY dot β = −0.033 (3.2%, interval crosses zero). Message: acquaintances reach lower-status occupations almost as often as equal ones; close ties do not. 4. Now RIGHT panel (origin): top row, RED β = −0.142 (13.2%) and BLUE β = −0.114 (10.7%); bottom row, RED β = −0.139 (13.0%) and BLUE β = −0.061 (5.9%). Same signs, smaller magnitudes than destination, except downward acquaintances. 5. Compare the two panels, top-row RED dots: −0.213 (destination) versus −0.142 (origin). Difference 0.071, 95% CI [0.004, 0.138], posterior probability 0.982 that destination declines more. This is the only contrast that clearly separates the anchors; acquaintances upward goes the same way (probability 0.917) but its interval includes zero. Downward there is no distinguishable difference. Take-home sentence: current position organizes similarity more than origin does, mainly for close ties and upward; origin still matters (it is never zero). Reading rule if someone asks: multiplicative effect, e^β per 10 points; at 30 points e^(3β).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="all-27-occupations-are-segregated-most-at-both-ends-of-the-hierarchy" class="slide level2 smaller">
+<h2>All 27 occupations are segregated, most at both ends of the hierarchy</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>How to read it.</strong> <span class="math inline">\(\omega=1\)</span> is random mixing. Blue: baseline <span class="math inline">\(\omega\)</span>; red: with covariates <span class="math inline">\(\omega'\)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Every occupation is above 1 in both tie types; closest to mixing: electricians (1.11, close ties).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Most segregated: <strong>both extremes</strong>, e.g.&nbsp;Farmers (3.04) and Professors (2.74).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Covariates cut <span class="math inline">\(\omega\)</span> mostly at the top (lawyers 2.44 to 1.66), hardly at the bottom.</li>
+</ul>
+</div>
+</div><div class="column" style="width:66%;">
+<div class="fragment" data-fragment-index="1">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-omega-1.png" style="width:100.0%"></p>
+<figcaption>Overdispersion by occupation (ordered by ISEI; bands: high, middle, low status), without covariates (ω) and with covariates (ω′). Points are posterior means, bars 95% credible intervals. ω levels are not comparable between panels. Source: SSCNPA (2025).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~1.5 min. The figure is dense on purpose (27 occupations); do not read it row by row. POINTER ORDER: (1) dashed line at ω = 1: random mixing; every point sits to its right. Blue = without covariates, red = with covariates. (2) Bottom of the close-ties panel: electricians, the point closest to the line (1.11, interval 1.03–1.21). (3) Top and bottom of each panel: high-status (Doctors, professors, senior officials) and low-status (Farmers, street vendors, delivery workers) have the largest ω; in the middle band the trades and services (electricians, mechanics, accountants, security guards) are the least segregated, although teachers, police and nurses are not. Close ties: Farmers 3.04, street vendors 3.00, teachers 2.90, professors and senior officials 2.74, Doctors 2.60. Acquaintances: professors 5.77, Farmers 4.32. (4) Compare blue and red in the top band: lawyers 2.44 to 1.66, Doctors 2.60 to 2.05, engineers 1.91 to 1.35; in the bottom band the red dot is on top of the blue (Farmers even rise slightly). Caution: ω levels are not comparable across panels; read the shape of each profile. The readable version by status is the next slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="close-ties-show-a-u-shape-by-status-covariates-flatten-it" class="slide level2 smaller">
+<h2>Close ties show a U-shape by status; covariates flatten it</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Close ties:</strong> high-status 2.44, middle 1.85, low 2.04: a <strong>U-shape</strong>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>Acquaintances:</strong> only high status stands out (3.48 against 2.75 and 2.76).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><strong>With covariates</strong> the profile flattens, mainly at the top (2.44 to 1.90).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>The <strong>explained share</strong> is largest at the top (0.39 and 0.23) and small at the bottom (0.12 and 0.03).</li>
+</ul>
+</div>
+</div><div class="column" style="width:56%;">
+<div class="fragment" data-fragment-index="1">
+<figure class="quarto-figure quarto-figure-center">
+
+<table class="occ-table status-table caption-top">
+<thead>
+<tr class="header">
+<th rowspan="2" data-quarto-table-cell-role="th">Tie type</th>
+<th rowspan="2" data-quarto-table-cell-role="th">Status</th>
+<th rowspan="2" data-quarto-table-cell-role="th"><em>n</em><sub>k</sub></th>
+<th data-quarto-table-cell-role="th">Baseline</th>
+<th data-quarto-table-cell-role="th">Covariates</th>
+<th data-quarto-table-cell-role="th">Explained</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"><em>ω</em><sub>k</sub></th>
+<th data-quarto-table-cell-role="th"><em>ω′</em><sub>k</sub></th>
+<th data-quarto-table-cell-role="th"><em>ω</em><sup>prop</sup><sub>k</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr class="grp odd">
+<td rowspan="3" class="tie">Close ties</td>
+<td>High</td>
+<td>7</td>
+<td>2.44</td>
+<td>1.90</td>
+<td>0.39</td>
+</tr>
+<tr class="even">
+<td>Middle</td>
+<td>9</td>
+<td>1.85</td>
+<td>1.72</td>
+<td>0.16</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td>11</td>
+<td>2.04</td>
+<td>1.92</td>
+<td>0.12</td>
+</tr>
+<tr class="grp even">
+<td rowspan="3" class="tie">Acquaintances</td>
+<td>High</td>
+<td>7</td>
+<td>3.48</td>
+<td>2.94</td>
+<td>0.23</td>
+</tr>
+<tr class="odd">
+<td>Middle</td>
+<td>9</td>
+<td>2.75</td>
+<td>2.60</td>
+<td>0.07</td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td>11</td>
+<td>2.76</td>
+<td>2.70</td>
+<td>0.03</td>
+</tr>
+</tbody>
+</table>
+
+<figcaption>Mean overdispersion and mean explained proportion by occupational status (high: ISEI ≥ 66; middle: 41–65; low: ≤ 40). Levels of ω are not comparable between tie types. Source: SSCNPA (2025).</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~1 min. This table is the summary of the previous figure. Read it by block: (1) close ties, baseline column: 2.44, 1.85, 2.04, the U-shape; the middle strata are the least segregated and work as a point of contact between the extremes (H2 supported for close ties). (2) Acquaintances: only the upper end stands out; low status (2.76) is no different from middle (2.75), and the median is even lower, because the bottom mixes very segregated occupations (Farmers, street vendors) with others close to random mixing; with a tercile cutoff the low group does exceed the middle one (2.91 against 2.46), so this conclusion is sensitive to the cutoff. (3) Covariates column: the top falls from 2.44 to 1.90 and the profile flattens. (4) Last column: share of segregation explained, 0.39 at the top and 0.12 at the bottom for close ties.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="distance-and-ego-traits-explain-about-20-of-segregation-in-close-ties-and-10-in-acquaintances" class="slide level2 smaller">
+<h2>Distance and ego traits explain about 20% of segregation in close ties and 10% in acquaintances</h2>
+<div class="columns">
+<div class="column" style="width:36%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>How to read it.</strong> <span class="math inline">\(\omega^{\text{prop}}\)</span> runs from 0 to 1; the dashed line is the average (0.20 close ties, 0.10 acquaintances).</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Most segregation stays unexplained</strong> in both tie types.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Highest at the top: engineers 0.61 and lawyers 0.54 (close ties); about zero for Farmers.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><strong>Unique contribution</strong> <span class="math inline">\(\Delta\omega^{\text{prop}}\)</span>, close ties: destination 0.034, origin 0.018. Acquaintances: both below 0.01, inconclusive.</li>
+</ul>
+</div>
+</div><div class="column" style="width:64%;">
+<div class="fragment" data-fragment-index="1">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_ecineq_tesis_files/figure-revealjs/plot-omega-prop-1.png" style="width:100.0%"></p>
+<figcaption>Proportion of excess dispersion explained by distance and ego traits (ω^prop), by occupation, ordered by ISEI. Dashed line: average across occupations. Source: SSCNPA (2025).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>Ignacio · ~1.5 min. POINTER ORDER: (1) Dashed line in each panel: the average explained share, 0.20 for close ties and 0.10 for acquaintances; the bars show each occupation. (2) Stress the message: even the best-explained occupations leave most of the segregation unexplained (residual excess averages 0.85 and 1.73 points). (3) Top of the close-ties panel: engineers 0.61, lawyers 0.54, managers 0.44, architects and Doctors 0.35; bottom: carabineros and merchants about 0.06, Farmers −0.01 (negative values are read as “nothing explained”). The ordering is similar across tie types (r = 0.80) and the share is higher for close ties in 24 of 27 occupations. Interpretation: what grows with status is the explained part, not the margin available to be explained. (4) Unique contributions (not in the figure): among close ties distance to destination adds 0.034 against 0.018 for origin, with a larger contribution of destination in 16 of 27 occupations (lawyers 0.194 against 0.008, engineers 0.090 against −0.009) and of origin in others (office cleaners 0.077, architects 0.071, cooks 0.047). Among acquaintances both are below 0.01 and cannot be told apart. Close ties versus acquaintances: destination contributes about nine times more, origin about three times more.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preliminary-answers-distance-anchors-contacts-and-segregation-is-only-partly-explained" class="slide level2 smaller">
+<h2>Preliminary answers: distance anchors contacts, and segregation is only partly explained</h2>
+<div class="highlight-box fragment" data-fragment-index="1">
+<p><strong>1. Homogeneity.</strong> Contacts fall with status distance from both destination and origin, <strong>more steeply from destination</strong>, mainly in close ties and upward. Acquaintances reach lower-status occupations almost as often as equal ones.</p>
+</div>
+<div class="highlight-box fragment" data-fragment-index="2">
+<p><strong>2. Segregation.</strong> Every occupation is segregated, most at <strong>both ends</strong> of the hierarchy among close ties. Distance and ego traits explain about <strong>20%</strong> (close ties) and <strong>10%</strong> (acquaintances), mostly at the top, and destination contributes more than origin only among close ties.</p>
+</div>
+<div class="highlight-box fragment" data-fragment-index="3">
+<p><strong>3. Tie closeness.</strong> Close ties are <strong>more homogeneous</strong> toward lower-status occupations and their segregation is <strong>more explained</strong> by distance and traits.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p>Results are preliminary. Next: income, children and partner, and municipality size as covariates; model comparison with leave-one-out cross-validation.</p>
+</div>
+<aside class="notes">
+<p>Ignacio · ~1.5 min, then hand back to Gabriel for the substantive conclusion. Map to the report’s hypotheses, for reference only: box 1 = H1 (partly) and H3a (partial support); box 2 = H2 (supported for close ties, partial for acquaintances), H3b (inconclusive for acquaintances) and H4b; box 3 = H4a (clear downward, suggestive upward) and H4b. Be explicit that all of these are exploratory. Caveat to keep in mind for Q&amp;A: most of the segregation remains unexplained, especially for low-status occupations, so we do not claim that distance or origin “causes” segregation; we measure how much of it they account for. Limits to concede if asked: ISEI as a single status dimension; origin measured by household head at 15; ω levels not comparable between tie types; cutoff sensitivity of the low-status group.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="if-status-similarity-explains-little-access-barriers-have-other-sources" class="slide level2 smaller">
+<h2>If status similarity explains little, access barriers have other sources</h2>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>The middle strata as a point of contact.</strong> The U-shape and the low segregation of everyday trades and services echo Chilean evidence that middle classes hold the most heterogeneous networks and may bridge the “edges” of the class structure <span class="citation" data-cites="otero2021 otero2026a burt2010">(<a href="#/references" role="doc-biblioref" onclick="">Burt, 2010</a>; <a href="#/references" role="doc-biblioref" onclick="">Otero et al., 2021</a>; <a href="#/references" role="doc-biblioref" onclick="">Otero et al., 2026</a>)</span>. But not the whole stratum: teachers, police officers and nurses are among the most overdispersed.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Where the unexplained 80–90% may come from.</strong> Barriers need not operate through similarity of status: shared settings such as residential and school segregation <span class="citation" data-cites="mendez2019">(<a href="#/references" role="doc-biblioref" onclick="">Méndez &amp; Gayo, 2019</a>)</span>, the organizations where ties are formed <span class="citation" data-cites="feld1981">(<a href="#/references" role="doc-biblioref" onclick="">Feld, 1981</a>)</span>, class-specific socialization <span class="citation" data-cites="lareau2011">(<a href="#/references" role="doc-biblioref" onclick="">Lareau, 2011</a>)</span> and the structure of opportunities itself <span class="citation" data-cites="blau1977 mcpherson2001">(<a href="#/references" role="doc-biblioref" onclick="">Blau, 1977</a>; <a href="#/references" role="doc-biblioref" onclick="">McPherson et al., 2001</a>)</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>Implication.</strong> A literature that reads segregation as similarity in status (by origin or destination) can <strong>underestimate</strong> these other sources; the large residual is itself a result, and social origin still adds to destination for close ties.</li>
+</ul>
+</div>
+<div class="highlight-box fragment" data-fragment-index="4">
+<p><strong>Open question:</strong> which settings produce the segregation that distance in status does not explain?</p>
+</div>
+<aside class="notes">
+<p>Ignacio or Gabriel · ~1.5 min, closing. This is the interpretive step; keep it as hypotheses, not as findings. (1) Middle classes: the U-shape in close ties matches the Chilean evidence from Otero et al.&nbsp;2021 (class homogeneity is high at the top and bottom, lower in the middle) and from the longitudinal work on class stability and mobility (lower-middle-class stable individuals have less homogeneous networks). Our occupational result adds nuance: the low-segregation middle occupations are trades and services in everyday use (electricians, mechanics, accountants, security guards); middle-status occupations such as secondary and primary teachers, carabineros and nurses are highly overdispersed. (2) The point of the whole talk: if distance in status, from origin and destination, plus sex, education and age explain only about 20% of the excess overdispersion among close ties and 10% among acquaintances, then access to occupations is organized by something else: where people live and study, which organizations bring them together, how classes socialize, and how large each group is. A literature that equates segregation with similarity in status may therefore underestimate those sources. (3) Be explicit about the limits: preliminary, exploratory, covariates still to be extended (income, children and partner, municipality size), and the residual may also reflect measurement of ISEI and of origin.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thank-you" class="slide level2 smaller">
+<h2>Thank you!</h2>
+<p><strong>Funding</strong>: This work was supported and funded by the National Agency of Research and Development (ANID) at the Chilean Ministry of Science, Technology, Knowledge, Innovation, grant/award number: ANID/ FONDECYT/11240249.</p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-baum2025" class="csl-entry" role="listitem">
+Baum, D. S. (2025). Explaining contact patterns in acquaintanceship networks: <span>A</span> new covariate-based model. <em>Social Networks</em>, <em>83</em>, 79–91. <a href="https://doi.org/10.1016/j.socnet.2025.05.005">https://doi.org/10.1016/j.socnet.2025.05.005</a>
+</div>
+<div id="ref-blau1977" class="csl-entry" role="listitem">
+Blau, P. (1977). <em>Inequality and heterogeneity: A primitive theorie of social structure</em>. Free Press [u.a.].
+</div>
+<div id="ref-Bourdieu1986" class="csl-entry" role="listitem">
+Bourdieu, P. (1986). The <span>Forms</span> of <span>Capital</span>. In J. G. Richardson (Ed.), <em>Handbook of <span>Theory</span> and <span>Research</span> for the <span>Sociology</span> of <span>Education</span></em> (pp. 241–258). Greenwood Press.
+</div>
+<div id="ref-burt2010" class="csl-entry" role="listitem">
+Burt, R. S. (Ed.). (2010). <em>Structural holes: The social structure of competition</em>. Harvard University Press.
+</div>
+<div id="ref-carpenter2017" class="csl-entry" role="listitem">
+Carpenter, B., Gelman, A., Hoffman, M. D., Lee, D., Goodrich, B., Betancourt, M., Brubaker, M., Guo, J., Li, P., &amp; Riddell, A. (2017). <span><em>Stan</em></span> : <span>A Probabilistic Programming Language</span>. <em>Journal of Statistical Software</em>, <em>76</em>(1). <a href="https://doi.org/10.18637/jss.v076.i01">https://doi.org/10.18637/jss.v076.i01</a>
+</div>
+<div id="ref-contreras2019" class="csl-entry" role="listitem">
+Contreras, D., Otero, G., Díaz, J. D., &amp; Suárez, N. (2019). Inequality in social capital in <span>Chile</span>: <span>Assessing</span> the importance of network size and contacts’ occupational prestige on status attainment. <em>Social Networks</em>, <em>58</em>, 59–77. <a href="https://doi.org/10.1016/j.socnet.2019.02.002">https://doi.org/10.1016/j.socnet.2019.02.002</a>
+</div>
+<div id="ref-dimaggio2012" class="csl-entry" role="listitem">
+DiMaggio, P., &amp; Garip, F. (2012). Network <span>Effects</span> and <span>Social Inequality</span>. <em>Annual Review of Sociology</em>, <em>38</em>(1), 93–118. <a href="https://doi.org/10.1146/annurev.soc.012809.102545">https://doi.org/10.1146/annurev.soc.012809.102545</a>
+</div>
+<div id="ref-diprete2011" class="csl-entry" role="listitem">
+DiPrete, T. A., Gelman, A., McCormick, T., Teitler, J., &amp; Zheng, T. (2011). Segregation in <span>Social Networks Based</span> on <span>Acquaintanceship</span> and <span>Trust</span>. <em>American Journal of Sociology</em>, <em>116</em>(4), 1234–1283. <a href="https://doi.org/10.1086/659100">https://doi.org/10.1086/659100</a>
+</div>
+<div id="ref-espinosa-rada2026" class="csl-entry" role="listitem">
+Espinosa-Rada, A., Bargsted, M., &amp; Ortiz Ruiz, F. (2026). Socioeconomic homogeneity in acquaintance networks: <span>Occupational</span> prestige, education, and intergenerational mobility. <em>Social Networks</em>, <em>86</em>, 342–353. <a href="https://doi.org/10.1016/j.socnet.2026.04.012">https://doi.org/10.1016/j.socnet.2026.04.012</a>
+</div>
+<div id="ref-feld1981" class="csl-entry" role="listitem">
+Feld, S. L. (1981). The <span>Focused Organization</span> of <span>Social Ties</span>. <em>American Journal of Sociology</em>, <em>86</em>(5), 1015–1035. <a href="https://doi.org/10.1086/227352">https://doi.org/10.1086/227352</a>
+</div>
+<div id="ref-ganzeboom1992" class="csl-entry" role="listitem">
+Ganzeboom, H. B. G., De Graaf, P. M., &amp; Treiman, D. J. (1992). A standard international socio-economic index of occupational status. <em>Social Science Research</em>, <em>21</em>(1), 1–56. <a href="https://doi.org/10.1016/0049-089X(92)90017-B">https://doi.org/10.1016/0049-089X(92)90017-B</a>
+</div>
+<div id="ref-goldman2022" class="csl-entry" role="listitem">
+Goldman, A. W. (2022). The <span>Early-Life Origins</span> of <span>Later-Life Networks</span>. <em>Social Problems</em>, <em>69</em>(2), 562–590. <a href="https://doi.org/10.1093/socpro/spaa047">https://doi.org/10.1093/socpro/spaa047</a>
+</div>
+<div id="ref-granovetterGettingJobStudy2010" class="csl-entry" role="listitem">
+Granovetter, M. S. (2010). <em>Getting a job: A study of contacts and careers</em> (2. ed., [Nachdr.]). Univ. of Chicago Press.
+</div>
+<div id="ref-lareau2011" class="csl-entry" role="listitem">
+Lareau, A. (2011). <em>Unequal childhoods: Class, race, and family life</em> (Second edition, with an update a decade later). University of California Press.
+</div>
+<div id="ref-lin1999" class="csl-entry" role="listitem">
+Lin, N. (1999). Social <span>Networks</span> and <span>Status Attainment</span>. <em>Annual Review of Sociology</em>, <em>25</em>, 467–487. <a href="https://www.jstor.org/stable/223513">https://www.jstor.org/stable/223513</a>
+</div>
+<div id="ref-lin2001" class="csl-entry" role="listitem">
+Lin, N. (2001). <em>Social <span>Capital</span>: <span>A Theory</span> of <span>Social Structure</span> and <span>Action</span></em>. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511815447">https://doi.org/10.1017/CBO9780511815447</a>
+</div>
+<div id="ref-lin1986" class="csl-entry" role="listitem">
+Lin, N., &amp; Dumin, M. (1986). Access to occupations through social ties. <em>Social Networks</em>, <em>8</em>(4), 365–385. <a href="https://doi.org/10.1016/0378-8733(86)90003-1">https://doi.org/10.1016/0378-8733(86)90003-1</a>
+</div>
+<div id="ref-mccormick2010" class="csl-entry" role="listitem">
+McCormick, T. H., Salganik, M. J., &amp; Zheng, T. (2010). How <span>Many People Do You Know</span>?: <span>Efficiently Estimating Personal Network Size</span>. <em>Journal of the American Statistical Association</em>, <em>105</em>(489), 59–70. <a href="https://doi.org/10.1198/jasa.2009.ap08518">https://doi.org/10.1198/jasa.2009.ap08518</a>
+</div>
+<div id="ref-mcpherson2001" class="csl-entry" role="listitem">
+McPherson, M., Smith-Lovin, L., &amp; Cook, J. M. (2001). Birds of a <span>Feather</span>: <span>Homophily</span> in <span>Social Networks</span>. <em>Annual Review of Sociology</em>, <em>27</em>(1), 415–444. <a href="https://doi.org/10.1146/annurev.soc.27.1.415">https://doi.org/10.1146/annurev.soc.27.1.415</a>
+</div>
+<div id="ref-mendez2019" class="csl-entry" role="listitem">
+Méndez, M. L., &amp; Gayo, M. (2019). <em>Upper middle class social reproduction: Wealth, schooling, and residential choice in <span>Chile</span></em>. Palgrave Macmillan.
+</div>
+<div id="ref-newman2008" class="csl-entry" role="listitem">
+Newman, K. S. (2008). <em>Falling from grace: Downward mobility in the age of affluence</em> (Nachdr.). Univ. of California Press.
+</div>
+<div id="ref-otero2026a" class="csl-entry" role="listitem">
+Otero, G., Plaza, A., &amp; Zavala-Aránguiz, I. (2026). Social mobility and class segregation in personal networks over time: Evidence from longitudinal data. <em>Frontiers in Sociology</em>, <em>11</em>, 1782127. <a href="https://doi.org/10.3389/fsoc.2026.1782127">https://doi.org/10.3389/fsoc.2026.1782127</a>
+</div>
+<div id="ref-otero2021" class="csl-entry" role="listitem">
+Otero, G., Volker, B., &amp; Rozer, J. (2021). Open <span>But Segregated</span>? <span>Class Divisions And</span> the <span>Network Structure</span> of <span>Social Capital</span> in <span>Chile</span>. <em>Social Forces</em>, <em>100</em>(2), 649–679. <a href="https://doi.org/10.1093/sf/soab005">https://doi.org/10.1093/sf/soab005</a>
+</div>
+<div id="ref-torche2005" class="csl-entry" role="listitem">
+Torche, F. (2005). Unequal <span>But Fluid</span>: <span>Social Mobility</span> in <span>Chile</span> in <span>Comparative Perspective</span>. <em>American Sociological Review</em>, <em>70</em>(3), 422–450. <a href="https://doi.org/10.1177/000312240507000304">https://doi.org/10.1177/000312240507000304</a>
+</div>
+<div id="ref-torche2014" class="csl-entry" role="listitem">
+Torche, F. (2014). Movilidad <span>Intergeneracional</span> y <span>Desigualdad</span>: <span>El Caso Latinoamericano</span>. <em>Annual Review of Sociology</em>, <em>40</em>(1), S2-1-S2-25. <a href="https://doi.org/10.1146/annurev-soc-062215-092006">https://doi.org/10.1146/annurev-soc-062215-092006</a>
+</div>
+<div id="ref-vantubergen2015" class="csl-entry" role="listitem">
+Van Tubergen, F., &amp; Volker, B. (2015). Inequality in <span>Access</span> to <span>Social Capital</span> in the <span>Netherlands</span>. <em>Sociology</em>, <em>49</em>(3), 521–538. <a href="https://doi.org/10.1177/0038038514543294">https://doi.org/10.1177/0038038514543294</a>
+</div>
+<div id="ref-wellman2018" class="csl-entry" role="listitem">
+Wellman, B. (2018). <em>Networks in the <span>Global Village</span>: <span>Life</span> in <span>Contemporary Communities</span></em> (B. Wellman, Ed.; 1st ed.). Routledge. <a href="https://doi.org/10.4324/9780429498718">https://doi.org/10.4324/9780429498718</a>
+</div>
+<div id="ref-zheng2006" class="csl-entry" role="listitem">
+Zheng, T., Salganik, M. J., &amp; Gelman, A. (2006). How <span>Many People Do You Know</span> in <span>Prison</span>?: <span>Using Overdispersion</span> in <span>Count Data</span> to <span>Estimate Social Structure</span> in <span>Networks</span>. <em>Journal of the American Statistical Association</em>, <em>101</em>(474), 409–423. <a href="https://doi.org/10.1198/016214505000001168">https://doi.org/10.1198/016214505000001168</a>
+</div>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="pres_ecineq_tesis_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
