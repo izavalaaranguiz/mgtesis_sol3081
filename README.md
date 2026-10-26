@@ -10,7 +10,7 @@ Repositorio con las presentaciones asociadas al desarrollo de mi tesis de magís
 
 - **"Intergenerational sources of homogeneity and occupational segregation in contact networks. Origin, destination and tie closeness in Santiago, Chile"**
 Presentado en *Second Conference ECINEQ–LAC Meeting*, 28-29 Octubre 2026, Montevideo.
-    - [Presentación ECINEQ-LAC](https://izavalaaranguiz.github.io/mgtesis_sol3081/presentaciones/presentacion_ecineq/pres_ecineq_tesis.html)
+    - [Presentación ECINEQ-LAC 29/10](https://izavalaaranguiz.github.io/mgtesis_sol3081/presentaciones/presentacion_ecineq/pres_ecineq_tesis.html)
 
 
 
