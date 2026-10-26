@@ -1,0 +1,929 @@
+---
+title: "Intergenerational sources of homogeneity and occupational segregation in contact networks"
+subtitle: |
+  **Origin, destination and tie closeness in Santiago, Chile** <br>
+  <br>
+   Second Conference ECINEQ–LAC Meeting 28-29 October 2026, Montevideo. <br>
+  <a href="mailto:ignacio.zavala@uc.cl">ignacio.zavala@uc.cl </a>
+author: "Ignacio Zavala Aránguiz & Gabriel Otero"
+institute: |
+  Pontificia Universidad Católica de Chile, Universidad Diego Portales
+  <div class="logos-row">
+    <img src="logos/uc-chile.png" alt="Pontificia Universidad Católica de Chile">
+    <img src="logos/udp.jpg" alt="Universidad Diego Portales">
+    <img src="logos/anid_chile.png" alt="ANID">
+  </div>
+lang: en
+format:
+  revealjs:
+    theme: [default, tema.scss]
+    slide-number: true
+    transition: slide
+    incremental: false
+    code-line-numbers: false
+bibliography: referencias_tesis.bib
+csl: apa.csl
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Personal networks do not just reflect inequality: they help reproduce it {.smaller}
+
+```{=html}
+<style>
+#title-slide h1.title {
+  font-size: 1.35em;
+}
+
+#title-slide .subtitle {
+  font-size: 0.85em;
+}
+
+#title-slide .institute {
+  font-size: 0.85em;
+}
+.reveal .slides {
+  font-size: 0.85em;
+}
+.reveal pre {
+  font-size: 0.5em !important;
+}
+.reveal .slides section.smaller pre {
+  font-size: 0.65em !important;
+}
+.figura-pendiente {
+  border: 2px dashed #999;
+  padding: 0.6em;
+  font-size: 0.65em;
+  text-align: center;
+  color: #555;
+}
+</style>
+```
+
+::: fragment
+- Information, job opportunities and support circulate through personal networks [@burt2010; @granovetterGettingJobStudy2010; @vantubergen2015], so their **socioeconomic composition** shapes which advantages accumulate and which do not [@lin2001; @dimaggio2012; @Bourdieu1986].
+:::
+
+::: fragment
+- People tend to associate with those who resemble them in **occupation** and sociodemographic traits, especially in unequal and segregated contexts [@mcpherson2001; @otero2021].
+:::
+
+::: fragment
+- This links to a central question in stratification: how much of the position people attain, and of the resources attached to it, traces back to **social origin**. Access to social capital depends on initial positions, that is, on parental resources, and not only on current position [@lin1999, @goldman2022].
+:::
+
+::: fragment
+**Why Chile?** High inequality, low intergenerational mobility, and marked residential and educational segregation [@torche2005; @torche2014; @mendez2019]: a setting where contact between classes is structurally restricted.
+:::
+
+::: {.highlight-box .fragment style="font-size: 1.1em;"}
+**Research question.** How are **origin** and **destination** positions associated with the **homogeneity** and **occupational segregation** of contact networks in Santiago, and how does this relationship differ between **close ties** and **acquaintances**?
+:::
+
+::: notes
+Gabriel · ~1.5 min. Key idea (first paragraph of the report): networks are not only a mirror of inequality, they are one of the mechanisms through which it is reproduced. Close with the Chilean setting and state the research question explicitly: it is the hook for the whole talk, and every later slide answers one piece of it.
+:::
+
+------------------------------------------------------------------------
+
+## The literature anchors similarity in current position; social origin remains unexamined {.smaller}
+
+:::::: columns
+::: {.column width="48%"}
+::: {.fragment fragment-index=1}
+- Studies of network composition model similarity from a single reference: ego's **current occupation**, or *destination* [@otero2021; @espinosa-rada2026].
+:::
+
+::: {.fragment fragment-index=2}
+- **Social origin** organizes the earliest and most durable ties (extended family, childhood neighborhood, school), stratified by the occupation of the household of upbringing [@feld1981; @lareau2011; @blau1977]. Those contacts are not necessarily erased by later changes in position [@newman2008; @wellman2018].
+:::
+
+::: {.fragment fragment-index=3}
+- Do people know more people close to their **social origin** or to their **current position**, and what does each case reveal about how stratification operates in networks?
+:::
+:::
+
+:::: {.column width="52%"}
+::: {.fragment fragment-index=1}
+```{=html}
+<figure class="quarto-figure quarto-figure-center">
+<svg class="diagram-origin-destino" viewBox="0 0 560 470" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Social origin and destination as two anchors of the contacts' occupations">
+  <defs>
+    <marker id="arrNavy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1A3A5C"/>
+    </marker>
+    <marker id="arrGrey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#777"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B3141A"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="125" rx="10" fill="#E8EEF5" stroke="#1A3A5C" stroke-width="2"/>
+  <text x="26" y="40" font-size="21" font-weight="bold" fill="#1A3A5C">SOCIAL ORIGIN</text>
+  <text x="26" y="68" font-size="18" fill="#222">Household of upbringing</text>
+  <text x="26" y="92" font-size="16" fill="#555">(occupation of the head at age 15)</text>
+  <text x="26" y="118" font-size="16" fill="#555" font-style="italic">family · neighborhood · school</text>
+
+  <rect x="10" y="175" width="380" height="125" rx="10" fill="#E8EEF5" stroke="#1A3A5C" stroke-width="2"/>
+  <text x="26" y="205" font-size="21" font-weight="bold" fill="#1A3A5C">DESTINATION</text>
+  <text x="26" y="233" font-size="18" fill="#222">Ego's current occupation</text>
+  <text x="26" y="257" font-size="16" fill="#555">(ISEI of own occupation)</text>
+  <text x="26" y="283" font-size="16" fill="#555" font-style="italic">colleagues · professional settings · services</text>
+
+  <rect x="10" y="345" width="380" height="110" rx="10" fill="#1A3A5C"/>
+  <text x="26" y="378" font-size="21" font-weight="bold" fill="#FFFFFF">CONTACTS</text>
+  <text x="26" y="408" font-size="18" fill="#FFFFFF">Occupations of the people</text>
+  <text x="26" y="432" font-size="18" fill="#FFFFFF">ego knows</text>
+
+  <line x1="200" y1="137" x2="200" y2="172" stroke="#777" stroke-width="2.5" marker-end="url(#arrGrey)"/>
+  <text x="212" y="161" font-size="15" fill="#777">trajectory</text>
+
+  <line x1="200" y1="302" x2="200" y2="342" stroke="#1A3A5C" stroke-width="3.5" marker-end="url(#arrNavy)"/>
+  <text x="226" y="326" font-size="15" fill="#1A3A5C">what we usually model</text>
+
+  <path d="M392 72 H465 V400 H394" fill="none" stroke="#B3141A" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arrRed)"/>
+  <text transform="translate(500 236) rotate(-90)" text-anchor="middle" font-size="17" font-weight="bold" fill="#B3141A">largely unexamined</text>
+</svg>
+<figcaption>Social origin and destination as two positional anchors of the occupations of ego's contacts. Source: authors' elaboration.</figcaption>
+</figure>
+```
+:::
+::::
+::::::
+
+
+
+::: notes
+Gabriel · ~1.5 min. Gap 1: the destination anchor captures contemporary contexts; social origin organizes the earliest and most durable ties. If origin matters, segregation reproduces inherited disadvantage; if destination matters, it reflects present stratification. Point at the dashed arrow: this is what the paper adds.
+:::
+
+------------------------------------------------------------------------
+
+## Homogeneity and segregation are not the same {.smaller}
+
+:::::: columns
+::: {.column width="52%"}
+::: {.fragment fragment-index=1}
+- **Homogeneity** describes *how similar two people are*, relative to contact opportunities: it is a property of the **ego**, once the size of groups and each person's sociability are accounted for.
+:::
+
+::: {.fragment fragment-index=2}
+- **Segregation** describes *how concentrated access to an occupation is*: its members are known by many people, or only by a few circles [@zheng2006; @diprete2011]. It is a property of **access to the group**, not of an individual's network.
+:::
+
+::: {.fragment fragment-index=3}
+- **The link is propensity.** If the chance of knowing someone in occupation *k* depends on how close ego is to *k*, contacts pile up among nearby egos and counts become **overdispersed** ($\omega > 1$): the part of that overdispersion absorbed by distance tells us how much segregation is organized around a reference [@baum2025].
+:::
+:::
+
+:::: {.column width="48%"}
+::: {.fragment fragment-index=3}
+```{r}
+#| label: plot-concepto-segregacion
+#| fig-cap: "Illustrative (simulated) distributions of the number of contacts in an occupation *k*, with the same mean in both panels; the second panel uses ω = 3. Source: authors' elaboration."
+#| fig-width: 5.4
+#| fig-height: 5.4
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+
+fam <- "Gill Sans MT"   # same family as the slides (tema.scss)
+navy <- "#1A3A5C"; mid <- "#5B7FA6"; grey <- "#555555"
+
+x     <- 0:8
+omega <- 3                       # illustrative overdispersion
+mu    <- 1                       # same mean in both panels
+lab1  <- 'bold("Evenly spread access:")~~bold(omega)~bold("= 1")'
+lab2  <- 'bold("Concentrated access:")~~bold(omega)~bold("> 1")'
+
+d <- rbind(
+  data.frame(x = x, p = dpois(x, mu),                           panel = lab1),
+  data.frame(x = x, p = dnbinom(x, size = mu / (omega - 1), mu = mu), panel = lab2)
+)
+d$panel <- factor(d$panel, levels = c(lab1, lab2))
+
+ggplot(d, aes(x, p, fill = panel)) +
+  geom_col(width = 0.7) +
+  geom_vline(xintercept = mu, linetype = "dashed", colour = grey, linewidth = 0.6) +
+  annotate("text", x = mu + 0.15, y = 0.66, label = "same mean", hjust = 0,
+           colour = grey, size = 4.2, family = fam) +
+  facet_wrap(~ panel, ncol = 1, labeller = label_parsed) +
+  scale_fill_manual(values = c(mid, navy), guide = "none") +
+  scale_x_continuous(breaks = seq(0, 8, 2)) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                     limits = c(0, 0.72), breaks = seq(0, 0.6, 0.2)) +
+  labs(x = "Number of contacts in occupation k", y = "Share of egos") +
+  theme_minimal(base_family = fam, base_size = 15) +
+  theme(
+    strip.text       = element_text(face = "bold", colour = navy, hjust = 0, size = 14),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.title       = element_text(colour = grey),
+    axis.line        = element_line(colour = "grey30", linewidth = 0.4)
+  )
+```
+:::
+::::
+::::::
+
+::: notes
+Gabriel · ~2 min. The most important conceptual slide: everything that follows is the link between the two levels. SAY (do not put on the slide): the two notions are often treated as interchangeable, so that similarity of contacts is read directly as isolation between classes [@otero2021; @vantubergen2015]; but the same homophily gradient can imply very different levels of segregation depending on how positions are distributed [@blau1977], and an occupation can be segregated for reasons unrelated to status similarity. The figure is illustrative (simulated, not data): both panels have the same average number of contacts in occupation k, but in the second one they are concentrated in few egos. Overdispersion ω above 1 is how we measure segregation; we come back to it when we introduce the model. If asked: if segregation is ordered by destination, barriers depend on the position attained; if by origin, they persist beyond changes in position.
+:::
+
+------------------------------------------------------------------------
+
+## Three questions for Santiago {.smaller}
+
+::: fragment
+**Why Chile is informative:** if similarity to origin and to destination is identifiable where barriers between classes are already pronounced, it is likely a general feature of stratified societies [@torche2014; @mendez2019; @contreras2019].
+:::
+
+::: {.highlight-box .fragment}
+**1. Homogeneity.** Do contacts resemble ego's **destination** more than ego's **origin**? And does status distance penalize contact with **higher-status** occupations more than with lower-status ones?
+:::
+
+::: {.highlight-box .fragment}
+**2. Segregation.** Are **high- and low-status** occupations more segregated in their access than middle-status ones? How much of that segregation does status similarity explain, and is it similarity to **origin** or to **destination**?
+:::
+
+::: {.highlight-box .fragment}
+**3. Tie closeness.** Do both patterns get stronger among **close ties** (close friends and family) than among **acquaintances**?
+:::
+
+
+
+::: notes
+Gabriel · ~1 min, then hand over to Ignacio ("Ignacio will show how we measure it and what we find"). Mapping to the report's hypotheses, for reference only (do not show): question 1 = H1 and H3a; question 2 = H2 and H3b; question 3 = H4a and H4b. All are exploratory.
+:::
+
+------------------------------------------------------------------------
+
+## Original data: 1,124 people report whom they know in 27 occupations {.smaller}
+
+:::::: columns
+::: {.column width="46%"}
+::: {.fragment fragment-index=1}
+- **Social Survey of Class, Networks and Political Attitudes (2025)**: Metropolitan Region of Santiago, 41 communes; probabilistic, multistage, stratified sample; face-to-face; **N = 1,124**.
+:::
+
+::: {.fragment fragment-index=2}
+- **Position Generator** [@lin1986] with **27 occupations**: *"How many people do you know who work as…?"* and, of them, *"how many are close friends or family?"* Result: 30,348 ego–occupation dyads, i.e. aggregated relational data [@zheng2006].
+:::
+
+::: {.fragment fragment-index=3}
+- **Counts:** $c_{ik}$ = all contacts of ego $i$ in occupation $k$; 
+- $f_{ik}$ = **close ties** (close friends or family); 
+- $w_{ik} = c_{ik} - f_{ik}$ = **acquaintances**. 
+- About 75% of the counts are zeros.
+:::
+
+::: {.fragment fragment-index=4}
+- **Status:** ISEI-08 [@ganzeboom1992] of each occupation, in three levels: **high** (≥ 66), **middle** (41–65) and **low** (≤ 40).
+:::
+:::
+
+:::: {.column width="54%"}
+::: {.fragment fragment-index=2}
+```{=html}
+<figure class="quarto-figure quarto-figure-center">
+<table class="occ-table">
+  <thead>
+    <tr><th>High (ISEI ≥ 66)</th><th>Middle (41–65)</th><th>Low (≤ 40)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Doctors (89)</td><td>Secondary/primary teachers (63)</td><td>Car mechanics (39)</td></tr>
+    <tr><td>Lawyers (85)</td><td>Social workers (59)</td><td>Truck drivers (36)</td></tr>
+    <tr><td>Professors (76)</td><td>Police officers (53)</td><td>Store salespersons (31)</td></tr>
+    <tr><td>Civil/industrial engineers (72)</td><td>Nurses and LVN (48)</td><td>Supermarket cashiers (31)</td></tr>
+    <tr><td>Architects (71)</td><td>Kindergarden teachers (47)</td><td>Delivery workers (30)</td></tr>
+    <tr><td>CEOs (70)</td><td>Accountants (47)</td><td>Security guards (27)</td></tr>
+    <tr><td>Senior government officials (70)</td><td>Shopkeepers/store owners (45)</td><td>Cooks (27)</td></tr>
+    <tr><td></td><td>Electricians (43)</td><td>Street vendors (26)</td></tr>
+    <tr><td></td><td>Secretaries (42)</td><td>Construction/factory workers (24)</td></tr>
+    <tr><td></td><td></td><td>Farmers (16)</td></tr>
+    <tr><td></td><td></td><td>Office cleaners (16)</td></tr>
+  </tbody>
+</table>
+<figcaption>The 27 occupations of the position generator, by ISEI-08 level (ISEI score in parentheses). Source: SSCNPA (2025).</figcaption>
+</figure>
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~1.5 min. Sampling: 10 territorial strata, then census zones, dwellings, and the adult with the most recent birthday in each household. The instrument does not enumerate ties one by one: it asks how many people ego knows in each occupation (aggregated relational data) and, of those, how many are close friends or family. We model close ties and acquaintances separately; both are counts with a high share of zeros (75.9% and 74.9%), because people often know nobody in occupations far from their own. The three ISEI levels are used later to read the results by status.
+:::
+
+------------------------------------------------------------------------
+
+## Distance between ego and each occupation, in ISEI points {.smaller}
+
+:::::: columns
+::: {.column width="50%"}
+::: {.fragment fragment-index=1}
+- Two reference positions for each ego $i$: **destination** (ISEI of own occupation) and **social origin** (ISEI of the household head when ego was 15).
+:::
+
+::: {.fragment fragment-index=2}
+- Distance to occupation $k$, split into an upward and a downward leg:
+
+$$\begin{aligned}D^{+}_{ik}&=\max(0,\ \mathrm{ISEI}_k-\mathrm{ISEI}_i)\\ D^{-}_{ik}&=\max(0,\ \mathrm{ISEI}_i-\mathrm{ISEI}_k)\end{aligned}$$
+:::
+
+
+::: {.highlight-box .fragment fragment-index=4}
+**How to read a coefficient $\beta$** (per 10 ISEI points)
+
+$$\%\,\text{change in expected contacts}=100\,(e^{\beta}-1)$$
+
+- $\beta=-0.213$: **19.2% fewer** contacts
+- At 30 points: **47.2% fewer** (effects compound)
+:::
+:::
+
+:::: {.column width="50%"}
+::: {.fragment fragment-index=2}
+```{r}
+#| label: plot-metrica-distancia
+#| fig-cap: "Distance from an illustrative ego to two occupations, measured from destination and from social origin. Source: authors' elaboration based on ISEI-08 scores of the position generator."
+#| fig-width: 6
+#| fig-height: 4.6
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+
+fam  <- "Gill Sans MT"
+navy <- "#1A3A5C"; red <- "#B3141A"; grey <- "#555555"
+
+# ISEI-08 scores of the 27 occupations (position generator)
+isei <- c(89, 85, 76, 72, 71, 70, 70, 63, 59, 53, 48, 47, 47, 45, 43, 42,
+          39, 36, 31, 31, 30, 27, 27, 26, 24, 16, 16)
+
+dest <- 47   # illustrative ego: accountant
+orig <- 31   # household head: store salesperson
+up   <- 85   # lawyers
+down <- 27   # security guards
+
+lanes <- data.frame(
+  y     = c(2, 1),
+  ref   = c(dest, orig),
+  lane  = c("Destination\n(ego: ISEI 47)", "Social origin\n(head at 15: ISEI 31)")
+)
+
+arrows <- data.frame(
+  y     = c(2, 2, 1, 1),
+  from  = c(dest, dest, orig, orig),
+  to    = c(up, down, up, down),
+  dir   = c("up", "down", "up", "down")
+)
+arrows$lab <- paste0(abs(arrows$to - arrows$from), " pts ", arrows$dir)
+short <- arrows$dir == "down" & abs(arrows$to - arrows$from) < 8
+arrows$xlab <- ifelse(short, arrows$from + 1, (arrows$from + arrows$to) / 2)
+arrows$hj   <- ifelse(short, 0, 0.5)
+
+ticks <- expand.grid(x = isei, y = c(2, 1))
+
+ggplot() +
+  geom_segment(data = lanes, aes(x = 10, xend = 95, y = y, yend = y), colour = "grey75", linewidth = 0.8) +
+  geom_segment(data = ticks, aes(x = x, xend = x, y = y - 0.07, yend = y + 0.07), colour = "grey55", linewidth = 0.5) +
+  geom_vline(xintercept = c(down, up), linetype = "dotted", colour = grey) +
+  geom_segment(data = arrows,
+               aes(x = from, xend = to, y = y + ifelse(dir == "up", 0.16, -0.16),
+                   yend = y + ifelse(dir == "up", 0.16, -0.16), colour = dir),
+               arrow = arrow(length = unit(0.15, "inches"), type = "closed"), linewidth = 1.1) +
+  geom_text(data = arrows,
+            aes(x = xlab, y = y + ifelse(dir == "up", 0.33, -0.34), label = lab, colour = dir, hjust = hj),
+            size = 4.4, family = fam, fontface = "bold") +
+  geom_point(data = lanes, aes(x = ref, y = y), shape = 18, size = 6, colour = navy) +
+  annotate("label", x = down, y = 2.72, label = "Security guards\n(ISEI 27)", size = 4.2, family = fam, colour = grey, lineheight = 0.9, fill = "white", label.size = 0) +
+  annotate("label", x = up,   y = 2.72, label = "Lawyers\n(ISEI 85)",        size = 4.2, family = fam, colour = grey, lineheight = 0.9, fill = "white", label.size = 0) +
+  scale_colour_manual(values = c(up = "#4977B5", down = red), guide = "none") +
+  scale_y_continuous(breaks = lanes$y, labels = lanes$lane, limits = c(0.5, 3.05)) +
+  scale_x_continuous(limits = c(10, 95), breaks = seq(20, 90, 10)) +
+  labs(x = "ISEI-08 (small ticks: the 27 occupations)", y = NULL) +
+  theme_minimal(base_family = fam, base_size = 14) +
+  theme(
+    panel.grid       = element_blank(),
+    axis.text.y      = element_text(colour = navy, face = "bold", lineheight = 0.95),
+    axis.title.x     = element_text(colour = grey),
+    axis.line.x      = element_line(colour = "grey30", linewidth = 0.4)
+  )
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~2 min. Read the figure bottom-up: the same occupation is at a different distance from each reference. For this illustrative ego (an accountant whose household head was a store salesperson), lawyers are 38 points above the destination but 54 above the social origin; security guards are 20 points below the destination and only 4 below the origin. Because the model includes both sets of distances at once, each one is estimated net of the other; "up" and "down" are relative to each ego, not a property of the occupation. SAY the reading rule slowly, it is the key to the results: the coefficient is multiplicative. β = −0.213 means 100(e^−0.213 − 1) = −19.2% contacts per 10 points, and e^(3 × −0.213) = 0.528, i.e. 47.2% fewer at 30 points, not three times 19.2. Next: the model that uses these distances.
+:::
+
+------------------------------------------------------------------------
+
+## From baseline segregation to the covariate model {.smaller}
+
+:::::: columns
+::: {.column width="56%"}
+::: {.fragment fragment-index=1}
+- **Baseline.** If the propensity to know occupation $k$ varies across egos, counts are overdispersed by a factor $\omega_k$: $\omega_k=1$ is random mixing, $\omega_k>1$ is **segregation** [@zheng2006; @diprete2011].
+:::
+
+::: {.fragment fragment-index=2}
+- **Covariate model** [@baum2025]: the propensity gets an explained part $\lambda_{ik}$; the overdispersion left is $\omega'_k$:
+
+$$\log\mu_{ik}=\alpha_i+\log m_k+\pi_k+\lambda_{ik}$$
+:::
+
+::: {.fragment fragment-index=3}
+- $\lambda_{ik}$ has two parts:
+
+$$\lambda_{ik}=\underbrace{\textstyle\sum_{l}\delta_{lk}X_{li}}_{\text{ego traits}}+\underbrace{\theta_{ik}}_{\text{four distances}}$$
+
+  - **Ego traits:** sex, education and age.
+  - **Distances:** up and down, from destination and from origin, one $\beta$ each, common to all occupations.
+:::
+
+::: {.fragment fragment-index=4}
+- Bayesian estimation in Stan [@carpenter2017] via Markov Chain Monte Carlo [@zheng2006; @baum2025; @dimaggio2012], separately for close ties and acquaintances.
+:::
+:::
+
+:::: {.column width="44%"}
+::: {.fragment fragment-index=2}
+```{=html}
+<figure class="quarto-figure quarto-figure-center">
+<table class="occ-table model-table">
+  <thead>
+    <tr><th></th><th>Barrier effects</th><th>Covariate model</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Controls for</b></td><td>sociability, occupation size</td><td>+ sex, education, age<br>+ four distances</td></tr>
+    <tr><td><b>Overdispersion</b></td><td><i>ω</i><sub>k</sub></td><td><i>ω′</i><sub>k</sub></td></tr>
+    <tr><td><b>Reads as</b></td><td>total segregation</td><td>segregation left unexplained</td></tr>
+  </tbody>
+</table>
+<figcaption>The two models whose overdispersions are compared. Source: authors' elaboration.</figcaption>
+</figure>
+```
+:::
+
+::: {.highlight-box .fragment fragment-index=3}
+Since occupation size and sociability are already accounted for, each $\beta$ is **homogeneity relative to contact opportunity**.
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~2.5 min. First the baseline, in one breath (this is the idea Gabriel showed with the simulated histograms): if everybody had the same chance of knowing anyone, counts would be Poisson; when the chance varies across people, the variance exceeds the mean by a factor ω, and the excess over 1 is segregation. Then the covariate model splits the propensity into a part explained by observed characteristics and a residual. Two kinds of explanatory terms: individual traits of ego (sex, education, age; their effects can differ by occupation) and the four distances (their betas are common to all occupations). Because both are in the model, comparing ω with ω′ tells us how much segregation is associated with them. Estimation is Bayesian (Stan, four chains of 2,000 iterations, no divergences, R-hat ≤ 1.01); we report posterior means and 95% credible intervals. If asked about priors: weakly informative, in the appendix of the report.
+:::
+
+------------------------------------------------------------------------
+
+## Two quantities summarize how much the covariates explain {.smaller}
+
+:::::: columns
+::: {.column width="55%"}
+::: {.fragment fragment-index=1}
+- **Explained proportion** [@mccormick2010; @baum2025]:
+
+$$\omega^{\text{prop}}_k=\frac{\omega_k-\omega'_k}{\omega_k-1}$$
+
+  From 0 (nothing explained) to 1 (everything). It is not how segregated $k$ is, but how much of its segregation the covariates account for.
+:::
+
+::: {.fragment fragment-index=2}
+- **Unique contribution of a block** $X_b$ (e.g. distance to destination, both legs):
+
+$$\Delta\omega^{\text{prop}}_k(X_b)=\omega^{\text{prop}}_{k,\text{full}}-\omega^{\text{prop}}_{k,\text{without }X_b}$$
+
+  Destination against origin: which anchor adds more?
+:::
+
+::: {.fragment fragment-index=3}
+- $\omega$ scales with the average number of contacts, so levels are **not comparable between close ties and acquaintances**; we compare through these two quantities.
+:::
+:::
+
+:::: {.column width="45%"}
+::: {.fragment fragment-index=1}
+```{r}
+#| label: plot-descomposicion
+#| fig-cap: "Illustrative decomposition of the excess overdispersion of one occupation (ω = 3, ω′ = 2.2). Source: authors' elaboration."
+#| fig-width: 5
+#| fig-height: 3.2
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+fam <- "Gill Sans MT"; navy <- "#1A3A5C"; mid <- "#9DB4CE"; grey <- "#555555"
+
+d <- data.frame(part = c("res", "exp"), xmin = c(1, 2.2), xmax = c(2.2, 3))
+ggplot(d) +
+  geom_rect(aes(xmin = xmin, xmax = xmax, ymin = 0.45, ymax = 0.75, fill = part)) +
+  scale_fill_manual(values = c(res = navy, exp = mid), guide = "none") +
+  annotate("text", x = 1.6, y = 0.6, label = "Residual", colour = "white", family = fam, fontface = "bold", size = 4.6) +
+  annotate("text", x = 2.6, y = 0.6, label = "Explained", colour = navy, family = fam, fontface = "bold", size = 4.6) +
+  annotate("text", x = 1,   y = 0.32, label = "omega~\"= 1\"",  parse = TRUE, size = 4.6, colour = grey, family = fam) +
+  annotate("text", x = 2.2, y = 0.32, label = "omega*\"'\"~\"= 2.2\"", parse = TRUE, size = 4.6, colour = grey, family = fam) +
+  annotate("text", x = 3,   y = 0.32, label = "omega~\"= 3\"",  parse = TRUE, size = 4.6, colour = grey, family = fam) +
+  annotate("text", x = 2, y = 0.98, parse = TRUE, size = 4.6, colour = navy, family = fam,
+           label = 'omega[prop]~"= 0.8 / 2.0 = 0.40"') +
+  scale_x_continuous(limits = c(0.8, 3.2)) +
+  scale_y_continuous(limits = c(0.2, 1.1)) +
+  theme_void(base_family = fam)
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~1 min. The excess overdispersion ω − 1 is split into a part the covariates explain (ω − ω′) and a residual (ω′ − 1). ω_prop is the explained share. The Δ version drops one block (distance to destination, or to origin) and asks how much the explained share falls: that is the unique contribution of each anchor, and it is how we answer "origin or destination?" for segregation. Warning to say aloud: ω is not comparable in level across close ties and acquaintances, which is why we use these ratios.
+:::
+
+------------------------------------------------------------------------
+
+## Contacts decline with distance from both anchors, more steeply from destination {.smaller}
+
+:::::: columns
+::: {.column width="62%"}
+::: {.fragment fragment-index=1}
+```{r}
+#| label: plot-coefplot
+#| fig-cap: "Distance coefficients from the covariate model, per ten ISEI points, by anchor, direction and tie type. Points are posterior means, bars 95% credible intervals, labels the implied % change in contacts; grey: interval includes zero. N = 1,124 egos; 30,348 ego-occupation dyads. Source: SSCNPA (2025)."
+#| fig-width: 7.4
+#| fig-height: 4.6
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+fam <- "Gill Sans MT"; navy <- "#1A3A5C"; blue <- "#4977B5"; red <- "#B3141A"; grey <- "#555555"; ns <- "#9A9A9A"
+
+b <- read.csv("datos/tabla_betas.csv")
+b$tie    <- ifelse(grepl("cercanos", b$tipo), "Close ties", "Acquaintances")
+b$anchor <- factor(ifelse(grepl("^Destino", b$polo), "Destination (current position)", "Origin (household at age 15)"),
+                   levels = c("Destination (current position)", "Origin (household at age 15)"))
+b$dir    <- factor(ifelse(b$direccion == "Hacia arriba", "Upward", "Downward"), levels = c("Downward", "Upward"))
+b$tie    <- factor(b$tie, levels = c("Acquaintances", "Close ties"))
+b$col    <- ifelse(b$q025 < 0 & b$q975 > 0, "Interval includes 0", as.character(b$tie))
+b$lab    <- sprintf("%.1f%%", b$cambio_pct)
+
+ggplot(b, aes(y = dir, group = tie, colour = col)) +
+  geom_vline(xintercept = 0, linetype = "dashed", colour = grey) +
+  geom_linerange(aes(xmin = q025, xmax = q975), orientation = "y",
+                 position = position_dodge(width = 0.6), linewidth = 1) +
+  geom_point(aes(x = beta10), position = position_dodge(width = 0.6), size = 3.2) +
+  geom_text(aes(x = beta10, label = lab), position = position_dodge(width = 0.6),
+            vjust = -0.9, size = 3.9, family = fam, show.legend = FALSE) +
+  facet_wrap(~ anchor) +
+  scale_colour_manual(values = c("Close ties" = red, "Acquaintances" = blue, "Interval includes 0" = ns),
+                      breaks = c("Close ties", "Acquaintances", "Interval includes 0"), name = NULL) +
+  scale_x_continuous(limits = c(-0.28, 0.03), breaks = seq(-0.25, 0, 0.05)) +
+  labs(x = expression(beta~"(change in the log contact rate per 10 ISEI points)"), y = NULL) +
+  theme_minimal(base_family = fam, base_size = 14) +
+  theme(
+    legend.position  = "bottom",
+    strip.background = element_rect(fill = navy, colour = NA),
+    strip.text       = element_text(colour = "white", face = "bold", size = 13),
+    axis.text.y      = element_text(colour = navy, face = "bold"),
+    axis.title.x     = element_text(colour = grey),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.border     = element_rect(colour = "grey70", fill = NA)
+  )
+```
+:::
+:::
+
+::: {.column width="38%"}
+::: {.fragment fragment-index=1}
+- **How to read it.** Each dot is a $\beta$ per 10 ISEI points: left of the dashed line, fewer contacts.
+:::
+
+::: {.fragment fragment-index=2}
+- **Both anchors matter:** seven of eight intervals exclude zero.
+:::
+
+::: {.fragment fragment-index=3}
+- **Destination weighs more than origin** among close ties, upward: 19.2% against 13.2% fewer contacts (probability 0.98).
+:::
+
+::: {.fragment fragment-index=4}
+- **Tie type:** acquaintances reach lower-status occupations almost as often as equal-status ones (3.2% fewer, not distinguishable from zero); close ties decline in both directions.
+:::
+:::
+::::::
+
+::: notes
+Ignacio · ~2.5 min. POINTER ORDER (the figure appears together with the first bullet, then one bullet per click).
+1. Dashed line first: zero = no change; everything to the left means fewer contacts. Red = close ties, blue = acquaintances, grey = interval includes zero. The labels are the implied % change per 10 points.
+2. LEFT panel (destination), top row ("Upward"), RED dot: β = −0.213, 19.2% fewer close-tie contacts for every 10 points above ego's own status. Then the BLUE dot just below it: β = −0.172, 15.7% fewer acquaintances. Message: both tie types fall as occupations get higher than ego.
+3. LEFT panel, bottom row ("Downward"): RED dot β = −0.167 (15.3% fewer) versus the GREY dot β = −0.033 (3.2%, interval crosses zero). Message: acquaintances reach lower-status occupations almost as often as equal ones; close ties do not.
+4. Now RIGHT panel (origin): top row, RED β = −0.142 (13.2%) and BLUE β = −0.114 (10.7%); bottom row, RED β = −0.139 (13.0%) and BLUE β = −0.061 (5.9%). Same signs, smaller magnitudes than destination, except downward acquaintances.
+5. Compare the two panels, top-row RED dots: −0.213 (destination) versus −0.142 (origin). Difference 0.071, 95% CI [0.004, 0.138], posterior probability 0.982 that destination declines more. This is the only contrast that clearly separates the anchors; acquaintances upward goes the same way (probability 0.917) but its interval includes zero. Downward there is no distinguishable difference.
+Take-home sentence: current position organizes similarity more than origin does, mainly for close ties and upward; origin still matters (it is never zero).
+Reading rule if someone asks: multiplicative effect, e^β per 10 points; at 30 points e^(3β).
+:::
+
+------------------------------------------------------------------------
+
+## All 27 occupations are segregated, most at both ends of the hierarchy {.smaller}
+
+:::::: columns
+::: {.column width="34%"}
+::: {.fragment fragment-index=1}
+- **How to read it.** $\omega=1$ is random mixing. Blue: baseline $\omega$; red: with covariates $\omega'$.
+:::
+
+::: {.fragment fragment-index=2}
+- Every occupation is above 1 in both tie types; closest to mixing: electricians (1.11, close ties).
+:::
+
+::: {.fragment fragment-index=3}
+- Most segregated: **both extremes**, e.g. Farmers (3.04) and Professors (2.74).
+:::
+
+::: {.fragment fragment-index=4}
+- Covariates cut $\omega$ mostly at the top (lawyers 2.44 to 1.66), hardly at the bottom.
+:::
+:::
+
+:::: {.column width="66%"}
+::: {.fragment fragment-index=1}
+```{r}
+#| label: plot-omega
+#| fig-cap: "Overdispersion by occupation (ordered by ISEI; bands: high, middle, low status), without covariates (ω) and with covariates (ω′). Points are posterior means, bars 95% credible intervals. ω levels are not comparable between panels. Source: SSCNPA (2025)."
+#| fig-width: 8
+#| fig-height: 6.4
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+fam <- "Gill Sans MT"; navy <- "#1A3A5C"; blue <- "#4977B5"; red <- "#B3141A"; grey <- "#555555"
+
+eng <- c(abogad = "Lawyers", altofungob = "Senior government officials", arquitecto = "Architects",
+         auxiliar = "Office cleaners", cajero = "Supermarket cashiers", camionero = "Truck drivers",
+         chef = "Cooks", comerciante = "Shopkeepers/store owners", contador = "Accountants",
+         delivery = "Delivery workers", edparvulo = "Kindergarden teachers", electr = "Electricians",
+         enfermer = "Nurses and LVN", gerente = "CEOs", guardia = "Security guards",
+         ing = "Civil/industrial engineers", mecanico = "Car mechanics", medico = "Doctors",
+         obrero = "Construction/factory workers", policia = "Police officers", profesc = "Secondary/primary teachers",
+         profeuniv = "Professors", secret = "Secretaries", trabajagric = "Farmers",
+         trabsocial = "Social workers", vendeambu = "Street vendors", vendedor = "Store salespersons")
+
+o <- read.csv("datos/tabla_omega_basal_completo.csv")
+o$occ   <- paste0(eng[o$ocupacion], " (", o$ISEI_j, ")")
+ord     <- unique(o[order(-o$ISEI_j, o$occ), "occ"])
+o$occ   <- factor(o$occ, levels = rev(ord))
+o$tie   <- factor(ifelse(grepl("cercanos", o$tipo), "Close ties", "Acquaintances"), levels = c("Close ties", "Acquaintances"))
+o$model <- factor(ifelse(grepl("^Sin", o$modelo), "Without covariates", "With covariates"),
+                  levels = c("Without covariates", "With covariates"))
+
+ggplot(o, aes(y = occ, colour = model)) +
+  geom_vline(xintercept = 1, linetype = "dashed", colour = grey) +
+  geom_linerange(aes(xmin = q025, xmax = q975), orientation = "y",
+                 position = position_dodge(width = 0.7), linewidth = 0.6) +
+  geom_point(aes(x = omega), position = position_dodge(width = 0.7), size = 1.6) +
+  geom_hline(yintercept = c(11.5, 20.5), colour = "grey70") +
+  facet_wrap(~ tie) +
+  scale_colour_manual(values = c("Without covariates" = blue, "With covariates" = red), name = NULL) +
+  coord_cartesian(xlim = c(1, 7)) +
+  scale_x_continuous(breaks = 1:7) +
+  labs(x = expression(omega~"(overdispersion; 1 = random mixing)"), y = NULL) +
+  theme_minimal(base_family = fam, base_size = 12) +
+  theme(
+    legend.position  = "bottom",
+    strip.background = element_rect(fill = navy, colour = NA),
+    strip.text       = element_text(colour = "white", face = "bold", size = 12),
+    axis.text.y      = element_text(colour = "black", size = 9.5),
+    axis.title.x     = element_text(colour = grey),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.border     = element_rect(colour = "grey70", fill = NA)
+  )
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~1.5 min. The figure is dense on purpose (27 occupations); do not read it row by row. POINTER ORDER: (1) dashed line at ω = 1: random mixing; every point sits to its right. Blue = without covariates, red = with covariates. (2) Bottom of the close-ties panel: electricians, the point closest to the line (1.11, interval 1.03–1.21). (3) Top and bottom of each panel: high-status (Doctors, professors, senior officials) and low-status (Farmers, street vendors, delivery workers) have the largest ω; in the middle band the trades and services (electricians, mechanics, accountants, security guards) are the least segregated, although teachers, police and nurses are not. Close ties: Farmers 3.04, street vendors 3.00, teachers 2.90, professors and senior officials 2.74, Doctors 2.60. Acquaintances: professors 5.77, Farmers 4.32. (4) Compare blue and red in the top band: lawyers 2.44 to 1.66, Doctors 2.60 to 2.05, engineers 1.91 to 1.35; in the bottom band the red dot is on top of the blue (Farmers even rise slightly). Caution: ω levels are not comparable across panels; read the shape of each profile. The readable version by status is the next slide.
+:::
+
+------------------------------------------------------------------------
+
+## Close ties show a U-shape by status; covariates flatten it {.smaller}
+
+:::::: columns
+::: {.column width="44%"}
+::: {.fragment fragment-index=2}
+- **Close ties:** high-status 2.44, middle 1.85, low 2.04: a **U-shape**.
+:::
+
+::: {.fragment fragment-index=3}
+- **Acquaintances:** only high status stands out (3.48 against 2.75 and 2.76).
+:::
+
+::: {.fragment fragment-index=4}
+- **With covariates** the profile flattens, mainly at the top (2.44 to 1.90).
+:::
+
+::: {.fragment fragment-index=5}
+- The **explained share** is largest at the top (0.39 and 0.23) and small at the bottom (0.12 and 0.03).
+:::
+:::
+
+:::: {.column width="56%"}
+::: {.fragment fragment-index=1}
+```{=html}
+<figure class="quarto-figure quarto-figure-center">
+<table class="occ-table status-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Tie type</th><th rowspan="2">Status</th><th rowspan="2"><i>n</i><sub>k</sub></th>
+      <th>Baseline</th><th>Covariates</th><th>Explained</th>
+    </tr>
+    <tr><th><i>ω</i><sub>k</sub></th><th><i>ω′</i><sub>k</sub></th><th><i>ω</i><sup>prop</sup><sub>k</sub></th></tr>
+  </thead>
+  <tbody>
+    <tr class="grp"><td class="tie" rowspan="3">Close ties</td><td>High</td><td>7</td><td>2.44</td><td>1.90</td><td>0.39</td></tr>
+    <tr><td>Middle</td><td>9</td><td>1.85</td><td>1.72</td><td>0.16</td></tr>
+    <tr><td>Low</td><td>11</td><td>2.04</td><td>1.92</td><td>0.12</td></tr>
+    <tr class="grp"><td class="tie" rowspan="3">Acquaintances</td><td>High</td><td>7</td><td>3.48</td><td>2.94</td><td>0.23</td></tr>
+    <tr><td>Middle</td><td>9</td><td>2.75</td><td>2.60</td><td>0.07</td></tr>
+    <tr><td>Low</td><td>11</td><td>2.76</td><td>2.70</td><td>0.03</td></tr>
+  </tbody>
+</table>
+<figcaption>Mean overdispersion and mean explained proportion by occupational status (high: ISEI ≥ 66; middle: 41–65; low: ≤ 40). Levels of ω are not comparable between tie types. Source: SSCNPA (2025).</figcaption>
+</figure>
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~1 min. This table is the summary of the previous figure. Read it by block: (1) close ties, baseline column: 2.44, 1.85, 2.04, the U-shape; the middle strata are the least segregated and work as a point of contact between the extremes (H2 supported for close ties). (2) Acquaintances: only the upper end stands out; low status (2.76) is no different from middle (2.75), and the median is even lower, because the bottom mixes very segregated occupations (Farmers, street vendors) with others close to random mixing; with a tercile cutoff the low group does exceed the middle one (2.91 against 2.46), so this conclusion is sensitive to the cutoff. (3) Covariates column: the top falls from 2.44 to 1.90 and the profile flattens. (4) Last column: share of segregation explained, 0.39 at the top and 0.12 at the bottom for close ties.
+:::
+
+------------------------------------------------------------------------
+
+## Distance and ego traits explain about 20% of segregation in close ties and 10% in acquaintances {.smaller}
+
+:::::: columns
+::: {.column width="36%"}
+::: {.fragment fragment-index=1}
+- **How to read it.** $\omega^{\text{prop}}$ runs from 0 to 1; the dashed line is the average (0.20 close ties, 0.10 acquaintances).
+:::
+
+::: {.fragment fragment-index=2}
+- **Most segregation stays unexplained** in both tie types.
+:::
+
+::: {.fragment fragment-index=3}
+- Highest at the top: engineers 0.61 and lawyers 0.54 (close ties); about zero for Farmers.
+:::
+
+::: {.fragment fragment-index=4}
+- **Unique contribution** $\Delta\omega^{\text{prop}}$, close ties: destination 0.034, origin 0.018. Acquaintances: both below 0.01, inconclusive.
+:::
+:::
+
+:::: {.column width="64%"}
+::: {.fragment fragment-index=1}
+```{r}
+#| label: plot-omega-prop
+#| fig-cap: "Proportion of excess dispersion explained by distance and ego traits (ω^prop), by occupation, ordered by ISEI. Dashed line: average across occupations. Source: SSCNPA (2025)."
+#| fig-width: 8
+#| fig-height: 6.4
+#| fig-dpi: 200
+#| fig-align: center
+#| out-width: "100%"
+#| dev: ragg_png
+
+library(ggplot2)
+fam <- "Gill Sans MT"; navy <- "#1A3A5C"; mid <- "#A9C1E0"; blue <- "#4977B5"; grey <- "#555555"
+
+eng <- c(abogad = "Lawyers", altofungob = "Senior government officials", arquitecto = "Architects",
+         auxiliar = "Office cleaners", cajero = "Supermarket cashiers", camionero = "Truck drivers",
+         chef = "Cooks", comerciante = "Shopkeepers/store owners", contador = "Accountants",
+         delivery = "Delivery workers", edparvulo = "Kindergarden teachers", electr = "Electricians",
+         enfermer = "Nurses and LVN", gerente = "CEOs", guardia = "Security guards",
+         ing = "Civil/industrial engineers", mecanico = "Car mechanics", medico = "Doctors",
+         obrero = "Construction/factory workers", policia = "Police officers", profesc = "Secondary/primary teachers",
+         profeuniv = "Professors", secret = "Secretaries", trabajagric = "Farmers",
+         trabsocial = "Social workers", vendeambu = "Street vendors", vendedor = "Store salespersons")
+
+p <- read.csv("datos/tabla_omega_prop_distancia_largo.csv")
+p <- p[p$modelo == "full", ]
+p$occ <- paste0(eng[p$ocupacion], " (", p$ISEI_j, ")")
+ord   <- unique(p[order(-p$ISEI_j, p$occ), "occ"])
+p$occ <- factor(p$occ, levels = rev(ord))
+p$tie <- factor(ifelse(p$tipo == "f_ij", "Close ties", "Acquaintances"), levels = c("Close ties", "Acquaintances"))
+avg   <- aggregate(omega_prop ~ tie, p, mean)
+
+ggplot(p, aes(x = omega_prop, y = occ)) +
+  geom_vline(xintercept = 0, colour = "grey50") +
+  geom_vline(data = avg, aes(xintercept = omega_prop), linetype = "dashed", colour = grey) +
+  geom_segment(aes(x = 0, xend = omega_prop, yend = occ), colour = mid, linewidth = 0.7) +
+  geom_point(colour = blue, size = 2.2) +
+  geom_hline(yintercept = c(11.5, 20.5), colour = "grey70") +
+  facet_wrap(~ tie) +
+  scale_x_continuous(limits = c(-0.05, 0.7), breaks = seq(0, 0.6, 0.2)) +
+  labs(x = expression(omega^"prop"~"(share of the excess overdispersion explained)"), y = NULL) +
+  theme_minimal(base_family = fam, base_size = 12) +
+  theme(
+    strip.background = element_rect(fill = navy, colour = NA),
+    strip.text       = element_text(colour = "white", face = "bold", size = 12),
+    axis.text.y      = element_text(colour = "black", size = 9.5),
+    axis.title.x     = element_text(colour = grey),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.border     = element_rect(colour = "grey70", fill = NA)
+  )
+```
+:::
+::::
+::::::
+
+::: notes
+Ignacio · ~1.5 min. POINTER ORDER: (1) Dashed line in each panel: the average explained share, 0.20 for close ties and 0.10 for acquaintances; the bars show each occupation. (2) Stress the message: even the best-explained occupations leave most of the segregation unexplained (residual excess averages 0.85 and 1.73 points). (3) Top of the close-ties panel: engineers 0.61, lawyers 0.54, managers 0.44, architects and Doctors 0.35; bottom: carabineros and merchants about 0.06, Farmers −0.01 (negative values are read as "nothing explained"). The ordering is similar across tie types (r = 0.80) and the share is higher for close ties in 24 of 27 occupations. Interpretation: what grows with status is the explained part, not the margin available to be explained. (4) Unique contributions (not in the figure): among close ties distance to destination adds 0.034 against 0.018 for origin, with a larger contribution of destination in 16 of 27 occupations (lawyers 0.194 against 0.008, engineers 0.090 against −0.009) and of origin in others (office cleaners 0.077, architects 0.071, cooks 0.047). Among acquaintances both are below 0.01 and cannot be told apart. Close ties versus acquaintances: destination contributes about nine times more, origin about three times more.
+:::
+
+------------------------------------------------------------------------
+
+## Preliminary answers: distance anchors contacts, and segregation is only partly explained {.smaller}
+
+::: {.highlight-box .fragment fragment-index=1}
+**1. Homogeneity.** Contacts fall with status distance from both destination and origin, **more steeply from destination**, mainly in close ties and upward. Acquaintances reach lower-status occupations almost as often as equal ones.
+:::
+
+::: {.highlight-box .fragment fragment-index=2}
+**2. Segregation.** Every occupation is segregated, most at **both ends** of the hierarchy among close ties. Distance and ego traits explain about **20%** (close ties) and **10%** (acquaintances), mostly at the top, and destination contributes more than origin only among close ties.
+:::
+
+::: {.highlight-box .fragment fragment-index=3}
+**3. Tie closeness.** Close ties are **more homogeneous** toward lower-status occupations and their segregation is **more explained** by distance and traits.
+:::
+
+::: {.fragment fragment-index=4}
+Results are preliminary. Next: income, children and partner, and municipality size as covariates; model comparison with leave-one-out cross-validation.
+:::
+
+::: notes
+Ignacio · ~1.5 min, then hand back to Gabriel for the substantive conclusion. Map to the report's hypotheses, for reference only: box 1 = H1 (partly) and H3a (partial support); box 2 = H2 (supported for close ties, partial for acquaintances), H3b (inconclusive for acquaintances) and H4b; box 3 = H4a (clear downward, suggestive upward) and H4b. Be explicit that all of these are exploratory. Caveat to keep in mind for Q&A: most of the segregation remains unexplained, especially for low-status occupations, so we do not claim that distance or origin "causes" segregation; we measure how much of it they account for. Limits to concede if asked: ISEI as a single status dimension; origin measured by household head at 15; ω levels not comparable between tie types; cutoff sensitivity of the low-status group.
+:::
+
+------------------------------------------------------------------------
+
+## If status similarity explains little, access barriers have other sources {.smaller}
+
+::: {.fragment fragment-index=1}
+- **The middle strata as a point of contact.** The U-shape and the low segregation of everyday trades and services echo Chilean evidence that middle classes hold the most heterogeneous networks and may bridge the "edges" of the class structure [@otero2021; @otero2026a; @burt2010]. But not the whole stratum: teachers, police officers and nurses are among the most overdispersed.
+:::
+
+::: {.fragment fragment-index=2}
+- **Where the unexplained 80–90% may come from.** Barriers need not operate through similarity of status: shared settings such as residential and school segregation [@mendez2019], the organizations where ties are formed [@feld1981], class-specific socialization [@lareau2011] and the structure of opportunities itself [@blau1977; @mcpherson2001].
+:::
+
+::: {.fragment fragment-index=3}
+- **Implication.** A literature that reads segregation as similarity in status (by origin or destination) can **underestimate** these other sources; the large residual is itself a result, and social origin still adds to destination for close ties.
+:::
+
+::: {.highlight-box .fragment fragment-index=4}
+**Open question:** which settings produce the segregation that distance in status does not explain?
+:::
+
+::: notes
+Ignacio or Gabriel · ~1.5 min, closing. This is the interpretive step; keep it as hypotheses, not as findings. (1) Middle classes: the U-shape in close ties matches the Chilean evidence from Otero et al. 2021 (class homogeneity is high at the top and bottom, lower in the middle) and from the longitudinal work on class stability and mobility (lower-middle-class stable individuals have less homogeneous networks). Our occupational result adds nuance: the low-segregation middle occupations are trades and services in everyday use (electricians, mechanics, accountants, security guards); middle-status occupations such as secondary and primary teachers, carabineros and nurses are highly overdispersed. (2) The point of the whole talk: if distance in status, from origin and destination, plus sex, education and age explain only about 20% of the excess overdispersion among close ties and 10% among acquaintances, then access to occupations is organized by something else: where people live and study, which organizations bring them together, how classes socialize, and how large each group is. A literature that equates segregation with similarity in status may therefore underestimate those sources. (3) Be explicit about the limits: preliminary, exploratory, covariates still to be extended (income, children and partner, municipality size), and the residual may also reflect measurement of ISEI and of origin.
+:::
+
+------------------------------------------------------------------------
+
+## Thank you! {.smaller}
+
+**Funding**: This work was supported and funded by the National Agency of Research and Development (ANID) at the Chilean Ministry of Science, Technology, Knowledge, Innovation, grant/award number: ANID/ FONDECYT/11240249.
+
+
+
+
+## References {.smaller .scrollable}
+
+::: {#refs}
+:::
