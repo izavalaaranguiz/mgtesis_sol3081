@@ -1,0 +1,109 @@
+ocupacion,label,ISEI_j,tercio,tipo,modelo,omega,q025,q975
+gerente,Gerentes/as grandes empresas,70,Alto,Lazos cercanos (f),Sin covariables (basal),2.23306945005,1.810934725,2.8160978025
+profesc,Profesores/as ed. media/básica,63,Medio,Lazos cercanos (f),Sin covariables (basal),2.904526822525,2.4764413375000003,3.4324489225000003
+mecanico,Mecánicos/as de autos,39,Bajo,Lazos cercanos (f),Sin covariables (basal),1.458635171975,1.29756819,1.650442315
+vendedor,Vendedores/as de tiendas,31,Bajo,Lazos cercanos (f),Sin covariables (basal),1.980054995475,1.72863151,2.2889610675000003
+ing,Ingenieros/as civiles/industriales,72,Alto,Lazos cercanos (f),Sin covariables (basal),1.9071046451,1.6682908875000002,2.1821963925
+cajero,Cajeros/as de supermercado,31,Bajo,Lazos cercanos (f),Sin covariables (basal),1.76536307675,1.5303376075000001,2.0447945675000003
+altofungob,Altos funcionarios de gobierno,70,Alto,Lazos cercanos (f),Sin covariables (basal),2.7376272451,1.9902174224999998,3.836090205
+guardia,Guardias de seguridad,27,Bajo,Lazos cercanos (f),Sin covariables (basal),1.615514439275,1.43339087,1.837947025
+profeuniv,Profesores/as universitarios,76,Alto,Lazos cercanos (f),Sin covariables (basal),2.7372218912,2.29297425,3.272543365
+trabajagric,Trabajadores/as agrícolas,16,Bajo,Lazos cercanos (f),Sin covariables (basal),3.039945951825,2.4512461325,3.8145038675000005
+comerciante,Comerciantes/dueños de locales,45,Medio,Lazos cercanos (f),Sin covariables (basal),1.713524647175,1.4860080625,1.98257314
+delivery,Repartidores/as (delivery),30,Bajo,Lazos cercanos (f),Sin covariables (basal),2.225390597025,1.8391873225000002,2.7522957900000002
+camionero,Conductores de camiones,36,Bajo,Lazos cercanos (f),Sin covariables (basal),1.84269925745,1.6320489775,2.0996250175
+medico,Médicos/as,89,Alto,Lazos cercanos (f),Sin covariables (basal),2.604472367625,2.1871974775000003,3.1280885850000004
+secret,Secretarios/as,42,Medio,Lazos cercanos (f),Sin covariables (basal),1.4680768898,1.2844286275,1.68457377
+enfermer,Enfermeros/as / TENS,48,Medio,Lazos cercanos (f),Sin covariables (basal),2.244837008825,1.9747333349999998,2.5571373925
+chef,Cocineros/as,27,Bajo,Lazos cercanos (f),Sin covariables (basal),1.62821211265,1.4427417200000001,1.84369029
+vendeambu,Vendedores/as ambulantes,26,Bajo,Lazos cercanos (f),Sin covariables (basal),2.995479070675,2.47990285,3.647880115
+electr,Electricistas,43,Medio,Lazos cercanos (f),Sin covariables (basal),1.108370801275,1.0298656175,1.2148481350000002
+abogad,Abogados/as,85,Alto,Lazos cercanos (f),Sin covariables (basal),2.435677304775,2.0810366775,2.88737915
+obrero,Obreros/as construcción/fábricas,24,Bajo,Lazos cercanos (f),Sin covariables (basal),2.08936535165,1.855814675,2.3562279200000003
+auxiliar,Auxiliares/aseadores de oficina,16,Bajo,Lazos cercanos (f),Sin covariables (basal),1.75674796515,1.5580903924999998,1.9987491775000001
+arquitecto,Arquitectos/as,71,Alto,Lazos cercanos (f),Sin covariables (basal),2.39418022785,2.01152101,2.9082009175000003
+edparvulo,Educadores/as de párvulos,47,Medio,Lazos cercanos (f),Sin covariables (basal),1.7856341975,1.5482000025,2.0720851275
+policia,Carabineros/as y policías,53,Medio,Lazos cercanos (f),Sin covariables (basal),2.321619349725,1.951076785,2.7925701849999998
+trabsocial,Trabajadores/as sociales,59,Medio,Lazos cercanos (f),Sin covariables (basal),1.630975037375,1.4256924400000002,1.899538535
+contador,Contadores/as,47,Medio,Lazos cercanos (f),Sin covariables (basal),1.50977873915,1.3235094275,1.73974313
+gerente,Gerentes/as grandes empresas,70,Alto,Lazos cercanos (f),Con covariables (completo),1.688885694675,1.3814073674999998,2.0957292525
+profesc,Profesores/as ed. media/básica,63,Medio,Lazos cercanos (f),Con covariables (completo),2.656595626375,2.2711105875,3.1131985300000005
+mecanico,Mecánicos/as de autos,39,Bajo,Lazos cercanos (f),Con covariables (completo),1.384767173575,1.2349775025,1.561158405
+vendedor,Vendedores/as de tiendas,31,Bajo,Lazos cercanos (f),Con covariables (completo),1.902883649725,1.6634240425,2.1985017575
+ing,Ingenieros/as civiles/industriales,72,Alto,Lazos cercanos (f),Con covariables (completo),1.352073165875,1.1969589175,1.53324177
+cajero,Cajeros/as de supermercado,31,Bajo,Lazos cercanos (f),Con covariables (completo),1.715403762925,1.4923583325,1.9915446475
+altofungob,Altos funcionarios de gobierno,70,Alto,Lazos cercanos (f),Con covariables (completo),2.271750791925,1.6760837199999998,3.214494815000001
+guardia,Guardias de seguridad,27,Bajo,Lazos cercanos (f),Con covariables (completo),1.572022360925,1.395735155,1.7920923500000001
+profeuniv,Profesores/as universitarios,76,Alto,Lazos cercanos (f),Con covariables (completo),2.394438768025,2.015198765,2.8777518675
+trabajagric,Trabajadores/as agrícolas,16,Bajo,Lazos cercanos (f),Con covariables (completo),3.059880621625,2.4621897525,3.8506200250000004
+comerciante,Comerciantes/dueños de locales,45,Medio,Lazos cercanos (f),Con covariables (completo),1.669033734525,1.45656555,1.9160540675
+delivery,Repartidores/as (delivery),30,Bajo,Lazos cercanos (f),Con covariables (completo),2.0931670542,1.7348748024999998,2.556514845
+camionero,Conductores de camiones,36,Bajo,Lazos cercanos (f),Con covariables (completo),1.714349939975,1.5120433675,1.9499507425
+medico,Médicos/as,89,Alto,Lazos cercanos (f),Con covariables (completo),2.04316840285,1.739007505,2.4082089450000006
+secret,Secretarios/as,42,Medio,Lazos cercanos (f),Con covariables (completo),1.395713365325,1.2279823474999998,1.60018569
+enfermer,Enfermeros/as / TENS,48,Medio,Lazos cercanos (f),Con covariables (completo),1.902798206075,1.681044805,2.1546029525
+chef,Cocineros/as,27,Bajo,Lazos cercanos (f),Con covariables (completo),1.55821304385,1.388964075,1.7627749350000002
+vendeambu,Vendedores/as ambulantes,26,Bajo,Lazos cercanos (f),Con covariables (completo),2.7250561661,2.256475645,3.31113317
+electr,Electricistas,43,Medio,Lazos cercanos (f),Con covariables (completo),1.0898133994750001,1.01998195,1.18724074
+abogad,Abogados/as,85,Alto,Lazos cercanos (f),Con covariables (completo),1.661457879575,1.4306631475,1.9307098925000001
+obrero,Obreros/as construcción/fábricas,24,Bajo,Lazos cercanos (f),Con covariables (completo),1.868531443275,1.666137525,2.0984372825000004
+auxiliar,Auxiliares/aseadores de oficina,16,Bajo,Lazos cercanos (f),Con covariables (completo),1.585426098375,1.4018819375000002,1.8108659950000001
+arquitecto,Arquitectos/as,71,Alto,Lazos cercanos (f),Con covariables (completo),1.905389610325,1.5940393775000001,2.29355191
+edparvulo,Educadores/as de párvulos,47,Medio,Lazos cercanos (f),Con covariables (completo),1.6168169237,1.40415857,1.8747929025
+policia,Carabineros/as y policías,53,Medio,Lazos cercanos (f),Con covariables (completo),2.24325330915,1.8775669575,2.713318155
+trabsocial,Trabajadores/as sociales,59,Medio,Lazos cercanos (f),Con covariables (completo),1.48361622465,1.2998122449999998,1.7114835124999999
+contador,Contadores/as,47,Medio,Lazos cercanos (f),Con covariables (completo),1.43380667495,1.26036519,1.6469476225000002
+gerente,Gerentes/as grandes empresas,70,Alto,Conocidos (w),Sin covariables (basal),3.09704345675,2.5240245874999996,3.8205293425000004
+profesc,Profesores/as ed. media/básica,63,Medio,Conocidos (w),Sin covariables (basal),3.862268990775,3.2909275924999997,4.5513695675
+mecanico,Mecánicos/as de autos,39,Bajo,Conocidos (w),Sin covariables (basal),1.870087456475,1.6416182275000002,2.1374541625000005
+vendedor,Vendedores/as de tiendas,31,Bajo,Conocidos (w),Sin covariables (basal),2.418980149925,2.122841855,2.76809299
+ing,Ingenieros/as civiles/industriales,72,Alto,Conocidos (w),Sin covariables (basal),3.495134228325,2.93422876,4.1463647425
+cajero,Cajeros/as de supermercado,31,Bajo,Conocidos (w),Sin covariables (basal),2.2439755327,1.92252855,2.6411952925
+altofungob,Altos funcionarios de gobierno,70,Alto,Conocidos (w),Sin covariables (basal),3.582807080775,2.65009979,4.9342309150000006
+guardia,Guardias de seguridad,27,Bajo,Conocidos (w),Sin covariables (basal),2.06148386125,1.8004037974999998,2.37535115
+profeuniv,Profesores/as universitarios,76,Alto,Conocidos (w),Sin covariables (basal),5.77336751185,4.7851462675,6.979707325000001
+trabajagric,Trabajadores/as agrícolas,16,Bajo,Conocidos (w),Sin covariables (basal),4.323767731625,3.4205105575,5.5157929475000005
+comerciante,Comerciantes/dueños de locales,45,Medio,Conocidos (w),Sin covariables (basal),2.088284436875,1.8442267175,2.3711992025
+delivery,Repartidores/as (delivery),30,Bajo,Conocidos (w),Sin covariables (basal),3.532040461,2.87020217,4.372550525
+camionero,Conductores de camiones,36,Bajo,Conocidos (w),Sin covariables (basal),2.316571187575,2.0071989175,2.69446333
+medico,Médicos/as,89,Alto,Conocidos (w),Sin covariables (basal),3.1915553463,2.705831445,3.7894125225
+secret,Secretarios/as,42,Medio,Conocidos (w),Sin covariables (basal),2.7554518782,2.3433774775,3.25098933
+enfermer,Enfermeros/as / TENS,48,Medio,Conocidos (w),Sin covariables (basal),2.749468592,2.3667673600000003,3.2066770924999997
+chef,Cocineros/as,27,Bajo,Conocidos (w),Sin covariables (basal),2.31732501255,2.0026301125,2.6972760275
+vendeambu,Vendedores/as ambulantes,26,Bajo,Conocidos (w),Sin covariables (basal),3.813372870025,3.1725425224999997,4.5820669700000005
+electr,Electricistas,43,Medio,Conocidos (w),Sin covariables (basal),1.981875507525,1.7222188125,2.2920359775
+abogad,Abogados/as,85,Alto,Conocidos (w),Sin covariables (basal),2.3149958242,1.96015245,2.7717656500000003
+obrero,Obreros/as construcción/fábricas,24,Bajo,Conocidos (w),Sin covariables (basal),3.216510910525,2.81790742,3.6748628274999997
+auxiliar,Auxiliares/aseadores de oficina,16,Bajo,Conocidos (w),Sin covariables (basal),2.241334873775,1.9687062775000002,2.5523350925
+arquitecto,Arquitectos/as,71,Alto,Conocidos (w),Sin covariables (basal),2.93266244515,2.4002051975000005,3.6207575375
+edparvulo,Educadores/as de párvulos,47,Medio,Conocidos (w),Sin covariables (basal),2.973874744725,2.4646702250000003,3.6142207925000007
+policia,Carabineros/as y policías,53,Medio,Conocidos (w),Sin covariables (basal),3.18622316285,2.61201763,3.9203032525
+trabsocial,Trabajadores/as sociales,59,Medio,Conocidos (w),Sin covariables (basal),2.955172777,2.485534595,3.5461904850000003
+contador,Contadores/as,47,Medio,Conocidos (w),Sin covariables (basal),2.17556760265,1.8545785074999999,2.5600356825
+gerente,Gerentes/as grandes empresas,70,Alto,Conocidos (w),Con covariables (completo),2.643914123775,2.1694593425,3.27155531
+profesc,Profesores/as ed. media/básica,63,Medio,Conocidos (w),Con covariables (completo),3.438932760425,2.9639442575,3.9956046025000003
+mecanico,Mecánicos/as de autos,39,Bajo,Conocidos (w),Con covariables (completo),1.860630001525,1.637806635,2.13280173
+vendedor,Vendedores/as de tiendas,31,Bajo,Conocidos (w),Con covariables (completo),2.406264373425,2.1061948025,2.75113306
+ing,Ingenieros/as civiles/industriales,72,Alto,Conocidos (w),Con covariables (completo),2.7805587676,2.3559396625000004,3.283479415
+cajero,Cajeros/as de supermercado,31,Bajo,Conocidos (w),Con covariables (completo),2.18482682655,1.8776540875,2.568029755
+altofungob,Altos funcionarios de gobierno,70,Alto,Conocidos (w),Con covariables (completo),3.306138005725,2.46909591,4.4451344724999995
+guardia,Guardias de seguridad,27,Bajo,Conocidos (w),Con covariables (completo),2.0793845382,1.8072954600000002,2.4071155250000005
+profeuniv,Profesores/as universitarios,76,Alto,Conocidos (w),Con covariables (completo),4.80439864445,4.05795445,5.7411199825
+trabajagric,Trabajadores/as agrícolas,16,Bajo,Conocidos (w),Con covariables (completo),4.386061064475,3.4569378950000003,5.625288945
+comerciante,Comerciantes/dueños de locales,45,Medio,Conocidos (w),Con covariables (completo),2.06471353245,1.816839555,2.3539372475
+delivery,Repartidores/as (delivery),30,Bajo,Conocidos (w),Con covariables (completo),3.477712764575,2.832570995,4.326360320000001
+camionero,Conductores de camiones,36,Bajo,Conocidos (w),Con covariables (completo),2.176078126225,1.8841799975000002,2.533199105
+medico,Médicos/as,89,Alto,Conocidos (w),Con covariables (completo),2.868717264225,2.4417486275,3.4000523900000004
+secret,Secretarios/as,42,Medio,Conocidos (w),Con covariables (completo),2.475053437325,2.12175524,2.9051824500000003
+enfermer,Enfermeros/as / TENS,48,Medio,Conocidos (w),Con covariables (completo),2.589198824525,2.22636235,3.0160197825000004
+chef,Cocineros/as,27,Bajo,Conocidos (w),Con covariables (completo),2.273607215375,1.9792500725,2.6419993125000003
+vendeambu,Vendedores/as ambulantes,26,Bajo,Conocidos (w),Con covariables (completo),3.521434708675,2.9604002525,4.197251665
+electr,Electricistas,43,Medio,Conocidos (w),Con covariables (completo),1.978527232625,1.73302613,2.2578348875
+abogad,Abogados/as,85,Alto,Conocidos (w),Con covariables (completo),1.87567395575,1.5922224775,2.2193127025000003
+obrero,Obreros/as construcción/fábricas,24,Bajo,Conocidos (w),Con covariables (completo),3.03613684695,2.6474994675,3.481963365
+auxiliar,Auxiliares/aseadores de oficina,16,Bajo,Conocidos (w),Con covariables (completo),2.274840219475,2.0007846725,2.6040994175
+arquitecto,Arquitectos/as,71,Alto,Conocidos (w),Con covariables (completo),2.272617210975,1.8678828775000003,2.785247865
+edparvulo,Educadores/as de párvulos,47,Medio,Conocidos (w),Con covariables (completo),2.853003418925,2.400594325,3.4163416225000005
+policia,Carabineros/as y policías,53,Medio,Conocidos (w),Con covariables (completo),3.1480828165,2.574376395,3.8625434300000006
+trabsocial,Trabajadores/as sociales,59,Medio,Conocidos (w),Con covariables (completo),2.7739696264,2.3337194625,3.3228242175
+contador,Contadores/as,47,Medio,Conocidos (w),Con covariables (completo),2.10778958475,1.7921654025,2.48993176

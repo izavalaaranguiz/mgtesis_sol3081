@@ -1,0 +1,5 @@
+hipotesis,comparacion,contraste,dif,q025,q975,razon_tasa_10pts,prob_nombre,prob
+H3a,Lazos cercanos,beta_origen - beta_destino,0.048613166055,0.016519978750000015,0.08098816425000001,1.0499527566941553,P(cae más con destino),0.99875
+H3a,Conocidos,beta_origen - beta_destino,0.0124637923895,-0.019345306225,0.044443463725,1.012668484202664,P(cae más con destino),0.7905
+H4a,Destino,beta_cercanos - beta_conocidos,-0.08967211953875,-0.1188905591,-0.061040140500000006,0.9143326226600657,P(cae más en cercanos),1
+H4a,Origen,beta_cercanos - beta_conocidos,-0.05352274587325,-0.081042829125,-0.027262989374999994,0.9479736728497778,P(cae más en cercanos),1
